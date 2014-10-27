@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7DEC98BF-0968-4CB6-B5F2-07D9066095F0}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{FA0B05BF-7E66-43C3-A0AB-43A0DA3A66FA}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ModelerenMenerenAssessment</RootNamespace>
-    <AssemblyName>ModelerenMenerenAssessment</AssemblyName>
-    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <RootNamespace>GoudkoortsModelLib</RootNamespace>
+    <AssemblyName>GoudkoortsModelLib</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -41,16 +39,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="GeneratedCode\Controller\GameController.cs" />
+    <Compile Include="GeneratedCode\Main.cs" />
+    <Compile Include="GeneratedCode\Model\Haven.cs" />
+    <Compile Include="GeneratedCode\Model\Kar.cs" />
+    <Compile Include="GeneratedCode\Model\KarBaan.cs" />
+    <Compile Include="GeneratedCode\Model\KarEindveld.cs" />
+    <Compile Include="GeneratedCode\Model\KarVeld.cs" />
+    <Compile Include="GeneratedCode\Model\Loods.cs" />
+    <Compile Include="GeneratedCode\Model\Schip.cs" />
+    <Compile Include="GeneratedCode\Model\SchipBaan.cs" />
+    <Compile Include="GeneratedCode\Model\SchipEindveld.cs" />
+    <Compile Include="GeneratedCode\Model\Spel.cs" />
+    <Compile Include="GeneratedCode\Model\Wissel.cs" />
+    <Compile Include="GeneratedCode\Model\WisselKant.cs" />
+    <Compile Include="GeneratedCode\View\BoardView.cs" />
+    <Compile Include="GeneratedCode\View\InputView.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controller\" />
-    <Folder Include="Model\" />
-    <Folder Include="View\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

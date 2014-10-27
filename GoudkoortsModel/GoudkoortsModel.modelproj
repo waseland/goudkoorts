@@ -22,6 +22,22 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
+    <Content Include="JelmerDiagram.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="JelmerDiagram.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>JelmerDiagram.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="ModelDefinition\Package1_1041.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1041.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1042.uml">
+      <SubType>Content</SubType>
+    </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="ModelDefinition\GoudkoortsModel.uml">
       <SubType>Content</SubType>
