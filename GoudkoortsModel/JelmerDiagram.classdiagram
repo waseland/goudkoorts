@@ -72,32 +72,6 @@
       </propertyInstances>
     </stereotypeInstance>
   </appliedStereotypesInternal>
-  <profileInstances>
-    <packageHasProfileInstances Id="1efd38cc-5fd2-4d94-8bfb-8d16cc3b85e6">
-      <profileInstance Id="ddc1a7dc-747b-4ec8-8909-3137d353feee" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="b72daef8-91b5-4304-9380-558deef578d9">
-      <profileInstance Id="76c0b0d2-a065-4dce-884b-34f8f2a6932a" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="851b6e75-8a65-4ccf-8dd2-205f833547dc">
-      <profileInstance Id="88483700-6794-49f3-9b06-94f6e61610b2" name="CSharpProfile">
-        <elementDefinition Id="4b9b89a7-b200-4ecf-b3b9-114f913c8717" />
-      </profileInstance>
-      <elementDefinition Id="1de1e577-df1a-4eb2-a7d7-8e7f387e32ff" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="59836d50-bd71-4247-a281-55b46751a6ca">
-      <profileInstance Id="c24bc711-d3d3-4bf4-9aa6-be06bce2129c" name="TextTemplateBindings">
-        <elementDefinition Id="28c610af-2acc-4cc6-b169-23890b64e303" />
-      </profileInstance>
-      <elementDefinition Id="ed2f8220-72e4-4222-b67e-a9a703b10f0b" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <logicalClassDesignerModelHasPackages>
       <package Id="e1b12912-0268-433b-ac25-5f1fac06206c" name="Model">
@@ -144,32 +118,6 @@
               </appliedStereotypesInternal>
               <elementDefinition Id="c48a9462-d2b2-4a7f-98be-a0faa66497c2" />
               <targetEnds>
-                <association Id="9f83d160-7351-4d5a-a1fa-ffcda99f32fc" isDerived="false" sourceEndRoleName="Spel" targetEndRoleName="KarBaan" isLeaf="false" isAbstract="false">
-                  <classMoniker Id="55796ce4-b873-4c97-97e4-462cd1e55acd" LastKnownName="KarBaan" />
-                  <relationshipOwnedElementsInternal>
-                    <associationHasOwnedEnds>
-                      <memberEnd Id="8b904d62-d9f9-4640-a186-cd5645f20b37" name="Spel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                        <elementDefinition Id="64e180d2-1633-456f-ab63-79faa61b03c0" />
-                      </memberEnd>
-                    </associationHasOwnedEnds>
-                    <associationHasOwnedEnds>
-                      <memberEnd Id="ffff9e41-7d13-43e1-9a41-84a91d46f265" name="KarBaan" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                        <lowerValueInternal>
-                          <literalString Id="708091ed-3f69-4993-8439-7decba1da62c" name="Lower" value="3">
-                            <elementDefinition Id="0602bae4-08ff-49a7-97fc-cd3114d2e58b" />
-                          </literalString>
-                        </lowerValueInternal>
-                        <upperValueInternal>
-                          <literalString Id="2e409e5f-be3d-49fc-a4b9-7e1246c73a97" name="Upper" value="3">
-                            <elementDefinition Id="f366e4bd-7569-493a-99de-38e638c8817d" />
-                          </literalString>
-                        </upperValueInternal>
-                        <elementDefinition Id="f3f2a44e-eb9a-4a78-83e3-ff509853aca9" />
-                      </memberEnd>
-                    </associationHasOwnedEnds>
-                  </relationshipOwnedElementsInternal>
-                  <elementDefinition Id="3e1bd85d-e379-4c16-8b3b-cb37126b0c64" />
-                </association>
                 <association Id="e54f3a0e-4fa8-4950-aebf-ae7559848af8" isDerived="false" sourceEndRoleName="Spel" targetEndRoleName="SchipBaan" isLeaf="false" isAbstract="false">
                   <classMoniker Id="6dcc5d23-7cd4-4a07-b709-d10dd512cea7" LastKnownName="SchipBaan" />
                   <relationshipOwnedElementsInternal>
@@ -180,6 +128,16 @@
                     </associationHasOwnedEnds>
                     <associationHasOwnedEnds>
                       <memberEnd Id="7545392a-170c-40e4-b295-f33624f65d12" name="SchipBaan" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <lowerValueInternal>
+                          <literalString Id="a4bd7b6d-ba5b-4ddc-8d0b-18b665ea04ec" name="Lower" value="2">
+                            <elementDefinition Id="02bf43fa-8d49-4995-804f-60e9133cdde6" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="b280565d-90ea-447a-8220-73cb3c54fb88" name="Upper" value="2">
+                            <elementDefinition Id="311b54a2-639d-4398-b2d6-35a02e016a9b" />
+                          </literalString>
+                        </upperValueInternal>
                         <elementDefinition Id="1bd70b5c-777d-4318-ad7c-545e02949caa" />
                       </memberEnd>
                     </associationHasOwnedEnds>
@@ -229,6 +187,12 @@
                 </stereotypeInstance>
               </appliedStereotypesInternal>
               <elementDefinition Id="3de0c334-e292-4cce-9ae8-eea2075af6d9" />
+              <generalsInternal>
+                <generalization Id="5cc5c12a-a832-482a-b608-46b773657688" isSubstitutable="false">
+                  <classMoniker Id="55796ce4-b873-4c97-97e4-462cd1e55acd" LastKnownName="KarBaan" />
+                  <elementDefinition Id="0cd379c8-545a-4f9e-9e4b-6b207c3f6140" />
+                </generalization>
+              </generalsInternal>
               <targetEnds>
                 <association Id="b2038366-5e2f-47fe-a2ce-7c2a95cc35b8" isDerived="false" sourceEndRoleName="Wissel" targetEndRoleName="WisselKant" isLeaf="false" isAbstract="false">
                   <enumerationMoniker Id="19df9984-a433-46bf-ab75-11cf7f85ec7c" LastKnownName="WisselKant" />
@@ -247,6 +211,11 @@
                   <elementDefinition Id="247ffc8d-ad8c-4c85-aa9c-c73c3bec5ef4" />
                 </association>
               </targetEnds>
+              <ownedAttributesInternal>
+                <property Id="ccb838df-5041-4c56-b02d-5fdc35879b9d" name="boolean bovenonder" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="feb2c48d-4c5b-4dd1-af7f-c0b2bc8e96f6" />
+                </property>
+              </ownedAttributesInternal>
             </class>
           </packageHasNamedElement>
           <packageHasNamedElement>
@@ -337,12 +306,11 @@
                 </stereotypeInstance>
               </appliedStereotypesInternal>
               <elementDefinition Id="29ad7556-fa4d-4020-a8e6-9caa666b6d9f" />
-              <generalsInternal>
-                <generalization Id="2cbe547f-b356-4d22-a36f-e871e32a9a6b" isSubstitutable="false">
-                  <classMoniker Id="55796ce4-b873-4c97-97e4-462cd1e55acd" LastKnownName="KarBaan" />
-                  <elementDefinition Id="efa6b69d-2c10-4790-8574-0e6f898d77c7" />
-                </generalization>
-              </generalsInternal>
+              <ownedAttributesInternal>
+                <property Id="3d4accfc-5eef-4115-a05c-ac16acd6b460" name="Int ID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="dd22f9d1-1e9a-4a13-be7a-d2b3c2112029" />
+                </property>
+              </ownedAttributesInternal>
             </class>
           </packageHasNamedElement>
           <packageHasNamedElement>
@@ -422,11 +390,11 @@
               </appliedStereotypesInternal>
               <elementDefinition Id="d2458606-e672-42cb-94c7-d652c95ec67c" />
               <ownedLiterals>
-                <enumerationLiteral Id="379c3b52-601b-409c-8903-515852fe5513" name="Boven">
-                  <elementDefinition Id="6e44de91-e8be-48ac-a5ff-4a6e2a614b4e" />
+                <enumerationLiteral Id="6e6a9419-987b-480c-91c2-1099e63837c6" name="links">
+                  <elementDefinition Id="fb70ab9b-0cd6-487d-903a-86c9f71820fe" />
                 </enumerationLiteral>
-                <enumerationLiteral Id="e0e33c9a-e967-4589-9f90-e320d919cb70" name="Onder">
-                  <elementDefinition Id="b477dc39-b693-4b4f-b1d8-4067d857fbb9" />
+                <enumerationLiteral Id="0707058f-031d-4bdf-8d4f-508c7eeba62a" name="rechts">
+                  <elementDefinition Id="9266b10a-b82a-43e1-8dc7-afdaa2a7a59c" />
                 </enumerationLiteral>
               </ownedLiterals>
             </enumeration>
@@ -471,6 +439,20 @@
                 </stereotypeInstance>
               </appliedStereotypesInternal>
               <elementDefinition Id="57fffd52-6035-49d0-85d0-a9359a11b06f" />
+              <ownedAttributesInternal>
+                <property Id="3230faf2-caeb-4cd9-87a0-ce3d8f9088fe" name="int baannummer" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="bcd947e1-6f1d-4e06-9dda-83c124036443" />
+                </property>
+                <property Id="65c5fdd9-31b6-418b-8f00-f784e59a2c2e" name="list&lt;KarVeld&gt; velden" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b3517be2-3866-4cf4-aa43-63e032867714" />
+                </property>
+                <property Id="93dfb459-fdf0-4d85-a9a2-09ebb60c82b5" name="Loods start" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="12eb1741-d992-4c2e-a55c-4c184ad460b3" />
+                </property>
+                <property Id="a11eb5be-f7db-4c7c-a7a4-7b70b75fe2c6" name="Eindveld eindveld" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="dde145ba-efc5-4843-a11e-f563cce6d586" />
+                </property>
+              </ownedAttributesInternal>
             </class>
           </packageHasNamedElement>
           <packageHasNamedElement>
@@ -603,12 +585,6 @@
                 </stereotypeInstance>
               </appliedStereotypesInternal>
               <elementDefinition Id="11b61c87-f645-4ea1-add3-1d300c8dab34" />
-              <generalsInternal>
-                <generalization Id="12feaa20-e0e2-4748-8289-2bada3620e74" isSubstitutable="false">
-                  <classMoniker Id="55796ce4-b873-4c97-97e4-462cd1e55acd" LastKnownName="KarBaan" />
-                  <elementDefinition Id="c1f27e5f-993f-482e-804a-4356017614ab" />
-                </generalization>
-              </generalsInternal>
             </class>
           </packageHasNamedElement>
           <packageHasNamedElement>
@@ -963,5 +939,31 @@
   </packagedElements>
   <package Id="5370d1b5-d3c9-4fdf-9674-da7204c3f3a7" name="GoudkoortsModel">
     <elementDefinition Id="19b44585-270c-4986-a78e-c666a1ae462c" />
+    <profileInstances>
+      <packageHasProfileInstances Id="1efd38cc-5fd2-4d94-8bfb-8d16cc3b85e6">
+        <profileInstance Id="ddc1a7dc-747b-4ec8-8909-3137d353feee" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="b72daef8-91b5-4304-9380-558deef578d9">
+        <profileInstance Id="76c0b0d2-a065-4dce-884b-34f8f2a6932a" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="851b6e75-8a65-4ccf-8dd2-205f833547dc">
+        <profileInstance Id="88483700-6794-49f3-9b06-94f6e61610b2" name="CSharpProfile">
+          <elementDefinition Id="4b9b89a7-b200-4ecf-b3b9-114f913c8717" />
+        </profileInstance>
+        <elementDefinition Id="1de1e577-df1a-4eb2-a7d7-8e7f387e32ff" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="59836d50-bd71-4247-a281-55b46751a6ca">
+        <profileInstance Id="c24bc711-d3d3-4bf4-9aa6-be06bce2129c" name="TextTemplateBindings">
+          <elementDefinition Id="28c610af-2acc-4cc6-b169-23890b64e303" />
+        </profileInstance>
+        <elementDefinition Id="ed2f8220-72e4-4222-b67e-a9a703b10f0b" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </logicalClassDesignerModel>
