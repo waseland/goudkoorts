@@ -294,11 +294,11 @@
         </appliedStereotypesInternal>
         <generalsInternal>
           <generalization
-            Id="0cd379c8-545a-4f9e-9e4b-6b207c3f6140"
+            Id="fb397c88-4c84-4481-aa50-2c8fe4cf0dc3"
             isSubstitutable="false">
             <classMoniker
-              Id="57fffd52-6035-49d0-85d0-a9359a11b06f"
-              LastKnownName="KarBaan"
+              Id="a1c6710d-1e8b-4c26-84de-0563dda5e025"
+              LastKnownName="KarVeld"
               LastKnownLocation="Package_1041.uml" />
           </generalization>
         </generalsInternal>
@@ -470,6 +470,16 @@
             </propertyInstances>
           </stereotypeInstance>
         </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="c73f01f0-043c-4df6-8f42-9048a007c009"
+            isSubstitutable="false">
+            <classMoniker
+              Id="57fffd52-6035-49d0-85d0-a9359a11b06f"
+              LastKnownName="KarBaan"
+              LastKnownLocation="Package_1041.uml" />
+          </generalization>
+        </generalsInternal>
         <ownedAttributesInternal>
           <property
             Id="dd22f9d1-1e9a-4a13-be7a-d2b3c2112029"
@@ -650,6 +660,47 @@
             </propertyInstances>
           </stereotypeInstance>
         </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="a206cf5e-2833-45b3-82d6-9aac86f21c35"
+            isDerived="false"
+            sourceEndRoleName="KarBaan"
+            targetEndRoleName="Kar"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="11b61c87-f645-4ea1-add3-1d300c8dab34"
+              LastKnownName="Kar"
+              LastKnownLocation="Package_1041.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="aff90ed2-e947-4dee-9c29-df5d673c2cbe"
+                  name="KarBaan"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="efc5cbe8-4a58-4f8b-baed-c51b8e6f8483"
+                  name="Kar"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="bcd947e1-6f1d-4e06-9dda-83c124036443"
