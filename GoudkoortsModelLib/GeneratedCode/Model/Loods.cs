@@ -13,6 +13,12 @@ namespace Model
 
 	public class Loods : KarBaan
 	{
+		public virtual int ID
+		{
+			get;
+			set;
+		}
+
 	}
 }
 

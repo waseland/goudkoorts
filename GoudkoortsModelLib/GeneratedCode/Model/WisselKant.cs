@@ -13,7 +13,7 @@ namespace Model
 
 	public enum WisselKant : int
 	{
-		Boven,
-		Onder,
+		links,
+		rechts,
 	}
 }

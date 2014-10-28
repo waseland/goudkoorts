@@ -11,7 +11,7 @@ namespace Model
 	using System.Linq;
 	using System.Text;
 
-	public class Kar : KarBaan
+	public class Kar
 	{
 	}
 }
