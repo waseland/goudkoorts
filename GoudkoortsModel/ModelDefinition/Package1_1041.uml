@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="72f02f59-8f76-4007-b1fa-6a33f94442be"
   name="Controller" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -162,6 +162,99 @@
                 <memberEnd
                   Id="fdd2cfd7-23f6-4cc1-9abc-c63556082a38"
                   name="Spel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="1e4e6475-8050-4e73-ad57-1b7a5e593966"
+        name="Main"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="139669a8-4740-44cc-99d1-296ced00ee2c"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e25b97b0-166c-445c-ac15-d4526f5729a5">
+                <propertyInstance
+                  Id="134922f1-4d18-4e36-a6ef-e2eb6da5a1c5"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1bba7dd6-f93c-42a2-bb39-cea64e9fc45b">
+                <propertyInstance
+                  Id="364f3fb1-a999-4097-a7e4-3353dd02409c"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="429a06ca-f598-44a6-8949-ccad7c40a0e5">
+                <propertyInstance
+                  Id="dc89aac3-c32b-4a43-81bd-5120267e2368"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="871d785c-b951-4220-b469-d15390e5a2b6">
+                <propertyInstance
+                  Id="14ccb8b5-fe91-4e7d-85a9-a80c4257ac7c"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="41def8f8-fdd2-487e-99cf-88a39d2c79b5">
+                <propertyInstance
+                  Id="532b9aa5-0e11-4adf-bf56-f503049ac75e"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="aa9b3633-6b40-445e-a920-a7397c73dfc1"
+            isDerived="false"
+            sourceEndRoleName="Main"
+            targetEndRoleName="GameController"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="049062a6-32af-43e6-ac6f-a6288872aa63"
+              LastKnownName="GameController"
+              LastKnownLocation="Package1_1041.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="358d74a1-4db5-4df5-8687-067ad345abbf"
+                  name="Main"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="aa5cdb74-c4fb-4ef1-9156-c2802bbd8994"
+                  name="GameController"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
