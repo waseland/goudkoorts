@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="19e853f5-d4cb-486f-991a-ba24fa153634" name="UMLClassDiagram1" linkedPackageId="5370d1b5-d3c9-4fdf-9674-da7204c3f3a7" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="19e853f5-d4cb-486f-991a-ba24fa153634" name="UMLClassDiagram1" linkedPackageId="5370d1b5-d3c9-4fdf-9674-da7204c3f3a7" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <appliedStereotypesInternal>
     <stereotypeInstance Id="fce30e3a-9b6a-45a6-964d-39381e22dd88" name="namespace" profile="CSharpProfile">
       <elementDefinition Id="8f64bacb-3d2f-420b-940d-e23dcc930896" />
@@ -145,6 +145,11 @@
                   <elementDefinition Id="3e1bd85d-e379-4c16-8b3b-cb37126b0c64" />
                 </association>
               </targetEnds>
+              <ownedOperationsInternal>
+                <operation Id="57ef6949-4d0d-446d-8953-da1cad4cb643" name="Setup" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="167437a3-78b1-434d-b932-ab922e390dde" />
+                </operation>
+              </ownedOperationsInternal>
             </class>
           </packageHasNamedElement>
           <packageHasNamedElement>
@@ -621,10 +626,52 @@
                   <elementDefinition Id="42472f41-0da2-42bf-bef5-1638fd732904" />
                 </association>
               </targetEnds>
+              <ownedOperationsInternal>
+                <operation Id="0fb7a629-a369-4820-b0ed-4a6bc9c8dcda" name="IsBezet" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="d181e7aa-f055-4a31-83b5-9d24fd7b5578" />
+                </operation>
+              </ownedOperationsInternal>
             </class>
           </packageHasNamedElement>
           <packageHasNamedElement>
             <class Id="b1a0d13c-6d52-439b-85f0-d840bd58cc0b" name="Kade" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <appliedStereotypesInternal>
+                <stereotypeInstance Id="dac1f3d6-4731-4121-b9dd-001145846328" name="class" profile="CSharpProfile">
+                  <elementDefinition Id="037a71ce-eaf7-40d6-9677-3b73076170ad" />
+                  <propertyInstances>
+                    <stereotypeInstanceHasPropertyInstances Id="1c8b59f6-eb32-4030-b6c6-b27e99d9d26b">
+                      <propertyInstance Id="bd081cff-a5f3-4aa9-b3c7-b02c9013997a" name="ClrAttributes">
+                        <elementDefinition Id="cdbc8a9c-c685-4a53-bd84-9ecb6a0680aa" />
+                      </propertyInstance>
+                      <elementDefinition Id="4b810f64-8a6a-4964-85e3-9686255f359d" />
+                    </stereotypeInstanceHasPropertyInstances>
+                    <stereotypeInstanceHasPropertyInstances Id="751635c8-b0f3-4086-ab5e-12869e6a9940">
+                      <propertyInstance Id="e437c30c-148c-4e2a-adba-86c03d61e697" name="IsPartial" value="false">
+                        <elementDefinition Id="3931cafa-f7b4-4681-afbc-db49bc44cea5" />
+                      </propertyInstance>
+                      <elementDefinition Id="a300d4f4-4d5a-40af-a061-37ccf6df4c8b" />
+                    </stereotypeInstanceHasPropertyInstances>
+                    <stereotypeInstanceHasPropertyInstances Id="35364026-084a-4e72-a22e-89cc979b9489">
+                      <propertyInstance Id="04f78891-c32f-40bc-b708-2ea96c370cec" name="IsStatic" value="false">
+                        <elementDefinition Id="99fc8748-43a3-4627-905b-29b01a49a3b7" />
+                      </propertyInstance>
+                      <elementDefinition Id="b75cced9-29bf-43ef-b71b-19d0f35d08ea" />
+                    </stereotypeInstanceHasPropertyInstances>
+                    <stereotypeInstanceHasPropertyInstances Id="37405b1e-ccdf-4d25-9916-3659333f369b">
+                      <propertyInstance Id="5f24fd20-d49b-49f8-a4b7-5b4baa85233a" name="IsUnsafe" value="false">
+                        <elementDefinition Id="0f2dd030-dcdf-446e-9a24-59e338d8ce00" />
+                      </propertyInstance>
+                      <elementDefinition Id="78c191be-6ad7-4a6f-8c0f-d102693c126a" />
+                    </stereotypeInstanceHasPropertyInstances>
+                    <stereotypeInstanceHasPropertyInstances Id="145c2286-90d4-42b2-baee-fdce55ed0599">
+                      <propertyInstance Id="57c091b1-5059-441d-86d1-89863becb77c" name="PackageVisibility" value="internal">
+                        <elementDefinition Id="925aa51f-b484-4900-8391-cc91fef5c80c" />
+                      </propertyInstance>
+                      <elementDefinition Id="73bf9242-613d-4475-9d83-2ef6750db2fb" />
+                    </stereotypeInstanceHasPropertyInstances>
+                  </propertyInstances>
+                </stereotypeInstance>
+              </appliedStereotypesInternal>
               <elementDefinition Id="657e0eb9-25c7-4971-a8c0-a8411eff06fe" />
               <generalsInternal>
                 <generalization Id="24229bbf-3762-4a74-8514-5c2b11d46644" isSubstitutable="false">
@@ -749,6 +796,11 @@
                   <elementDefinition Id="f272d60c-c9e7-40c9-a1e9-bea79095bd16" />
                 </association>
               </targetEnds>
+              <ownedOperationsInternal>
+                <operation Id="3ac5d552-eec2-4e11-88f2-ac07af9f9884" name="Start" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="f07675ef-ebba-44b9-b36c-f42fee892500" />
+                </operation>
+              </ownedOperationsInternal>
             </class>
           </packageHasNamedElement>
         </packagedElements>
@@ -798,6 +850,11 @@
                 </stereotypeInstance>
               </appliedStereotypesInternal>
               <elementDefinition Id="6b235192-105c-434c-bded-cfd0b50905fc" />
+              <ownedOperationsInternal>
+                <operation Id="0e2f531e-efcb-4fd4-90ad-9ce6adc7bcb8" name="ShowBoard" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="29a9d0a8-3d28-4452-9b78-11781ec3421e" />
+                </operation>
+              </ownedOperationsInternal>
             </class>
           </packageHasNamedElement>
           <packageHasNamedElement>
@@ -840,6 +897,11 @@
                 </stereotypeInstance>
               </appliedStereotypesInternal>
               <elementDefinition Id="e1956027-5e74-4cbc-a587-cdc77622c621" />
+              <ownedOperationsInternal>
+                <operation Id="1f41ab8d-218c-4562-9986-2003e0cd2ae3" name="GetInput" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="9e631253-5a4c-4b3d-ab42-443bfd105aed" />
+                </operation>
+              </ownedOperationsInternal>
             </class>
           </packageHasNamedElement>
         </packagedElements>
