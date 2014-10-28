@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="72f02f59-8f76-4007-b1fa-6a33f94442be"
+  name="Controller" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="049062a6-32af-43e6-ac6f-a6288872aa63"
+        name="GameController"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="4b519755-32e9-4ac7-98f2-3a747b01f55a"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ee7d1ee3-6b33-4c94-826a-51b49ca90d4f">
+                <propertyInstance
+                  Id="6b20504d-b503-4ef7-918d-1ec55fc92a1e"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c79ccb44-bb6d-4b5b-8aed-f8b6c0a0f02d">
+                <propertyInstance
+                  Id="0b8925ec-de74-46ba-8944-8fa9ee5c8e25"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6b5fed67-0141-48d2-904e-a2615ab9cdac">
+                <propertyInstance
+                  Id="25654379-3afb-414b-ad38-b903c9c7d5bb"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3fb5622f-9371-4a00-bfd3-08a29461980c">
+                <propertyInstance
+                  Id="d0151c08-594c-4200-8518-dda98f2f73b5"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="00ee9da4-b889-4b57-91c0-0eb893dff068">
+                <propertyInstance
+                  Id="e7fa67d6-0c63-4d83-aef1-ab8b6d50e497"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="2feeeeb0-b385-4d2a-97f6-6b0fd0860631"
+            isDerived="false"
+            sourceEndRoleName="GameController"
+            targetEndRoleName="BoardView"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="6b235192-105c-434c-bded-cfd0b50905fc"
+              LastKnownName="BoardView"
+              LastKnownLocation="Package_1042.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="10c9b5cc-517d-476a-a1cb-6d9f877b5ecc"
+                  name="GameController"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ed9b6901-755f-4ab1-9244-84fa07063f78"
+                  name="BoardView"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="2fd370ff-edf1-46cf-ace4-41d8d968570f"
+            isDerived="false"
+            sourceEndRoleName="GameController"
+            targetEndRoleName="InputView"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="e1956027-5e74-4cbc-a587-cdc77622c621"
+              LastKnownName="InputView"
+              LastKnownLocation="Package_1042.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="87694490-a642-4525-a131-58ea7b29d658"
+                  name="GameController"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="889703bf-de4d-491b-910e-93692c7a1b24"
+                  name="InputView"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="f272d60c-c9e7-40c9-a1e9-bea79095bd16"
+            isDerived="false"
+            sourceEndRoleName="GameController"
+            targetEndRoleName="Spel"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="c48a9462-d2b2-4a7f-98be-a0faa66497c2"
+              LastKnownName="Spel"
+              LastKnownLocation="Package_1041.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e19e9c78-79f7-4a2c-a802-4e0240a36c10"
+                  name="GameController"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fdd2cfd7-23f6-4cc1-9abc-c63556082a38"
+                  name="Spel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation
+            Id="f07675ef-ebba-44b9-b36c-f42fee892500"
+            name="Start"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="1e4e6475-8050-4e73-ad57-1b7a5e593966"
+        name="Main"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="139669a8-4740-44cc-99d1-296ced00ee2c"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e25b97b0-166c-445c-ac15-d4526f5729a5">
+                <propertyInstance
+                  Id="134922f1-4d18-4e36-a6ef-e2eb6da5a1c5"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1bba7dd6-f93c-42a2-bb39-cea64e9fc45b">
+                <propertyInstance
+                  Id="364f3fb1-a999-4097-a7e4-3353dd02409c"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="429a06ca-f598-44a6-8949-ccad7c40a0e5">
+                <propertyInstance
+                  Id="dc89aac3-c32b-4a43-81bd-5120267e2368"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="871d785c-b951-4220-b469-d15390e5a2b6">
+                <propertyInstance
+                  Id="14ccb8b5-fe91-4e7d-85a9-a80c4257ac7c"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="41def8f8-fdd2-487e-99cf-88a39d2c79b5">
+                <propertyInstance
+                  Id="532b9aa5-0e11-4adf-bf56-f503049ac75e"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="aa9b3633-6b40-445e-a920-a7397c73dfc1"
+            isDerived="false"
+            sourceEndRoleName="Main"
+            targetEndRoleName="GameController"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="049062a6-32af-43e6-ac6f-a6288872aa63"
+              LastKnownName="GameController"
+              LastKnownLocation="Package1_1041.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="358d74a1-4db5-4df5-8687-067ad345abbf"
+                  name="Main"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="aa5cdb74-c4fb-4ef1-9156-c2802bbd8994"
+                  name="GameController"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

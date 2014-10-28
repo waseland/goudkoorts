@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="25f398f5-f67a-41b9-bc4a-05a188f8ffeb"
+  name="View" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="6b235192-105c-434c-bded-cfd0b50905fc"
+        name="BoardView"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="cd14aadf-94ce-48dc-8380-ea01f8db9c31"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="021a24d1-19a4-4585-9db3-e9754b544c1a">
+                <propertyInstance
+                  Id="5dfe059d-97dd-422d-a071-63a1947bed86"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8a804090-2fde-467c-9410-e4e60fb1839b">
+                <propertyInstance
+                  Id="b4441114-eaf3-4f2e-b410-45341d78c4bb"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="572466ba-cc09-4d00-82bc-d54cbcf72db8">
+                <propertyInstance
+                  Id="1c05e7ed-26f4-418d-b2c7-e6f873a6664d"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9d888440-3946-4a5d-9cec-f8740a030cfb">
+                <propertyInstance
+                  Id="1e3b14de-8345-49d4-b01c-ce61a8d6159b"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3646c860-fb02-408e-99bf-a388136bc418">
+                <propertyInstance
+                  Id="ac9dbe99-d32c-4618-9dea-b8a632f9bd96"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="29a9d0a8-3d28-4452-9b78-11781ec3421e"
+            name="ShowBoard"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e1956027-5e74-4cbc-a587-cdc77622c621"
+        name="InputView"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="9dfcb047-aa8b-48cc-aa2f-a8963fb7c725"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e3f92028-b61c-49c7-8bb8-ea749bb3d50c">
+                <propertyInstance
+                  Id="1cf10596-b657-45bb-b9bd-741840cfa446"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3f0a3174-e155-40d5-a6c4-77545f9d433e">
+                <propertyInstance
+                  Id="9ff28409-705b-44ba-a3ab-81149967ff8e"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="17a087c4-a15f-40c8-8a8e-13e3ac0b311c">
+                <propertyInstance
+                  Id="65382d4b-6424-40cd-888a-2d1a51dda90e"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5817b332-2c80-4107-98d5-28a305fd0077">
+                <propertyInstance
+                  Id="c258f11c-7a71-40e7-98e5-d41026188922"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3e3535f0-4722-4a48-ad67-95b08058c272">
+                <propertyInstance
+                  Id="11e724d7-ca95-434d-bb3a-cf45d02608ec"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="9e631253-5a4c-4b3d-ab42-443bfd105aed"
+            name="GetInput"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
