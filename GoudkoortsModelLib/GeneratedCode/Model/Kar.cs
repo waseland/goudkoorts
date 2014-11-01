@@ -16,7 +16,7 @@ namespace Model
         private Boolean Lading;
 
 
-        public Kar Kar()
+        public Kar()
         {
             Lading = true;
         }
