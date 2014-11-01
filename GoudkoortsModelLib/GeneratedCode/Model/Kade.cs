@@ -11,8 +11,14 @@ namespace Model
 	using System.Linq;
 	using System.Text;
 
-	public class SchipBaan
+	public class Kade : Veld
 	{
+		public virtual Schip Schip
+		{
+			get;
+			set;
+		}
+
 	}
 }
 

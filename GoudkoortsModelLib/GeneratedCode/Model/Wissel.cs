@@ -11,14 +11,8 @@ namespace Model
 	using System.Linq;
 	using System.Text;
 
-	public class Wissel : KarVeld
+	public class Wissel : Veld
 	{
-		public virtual Boolean bovenonder
-		{
-			get;
-			set;
-		}
-
 		public virtual WisselKant WisselKant
 		{
 			get;

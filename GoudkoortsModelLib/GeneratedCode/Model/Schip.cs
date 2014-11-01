@@ -13,6 +13,12 @@ namespace Model
 
 	public class Schip : SchipBaan
 	{
+		public virtual Kade Kade
+		{
+			get;
+			set;
+		}
+
 	}
 }
 

@@ -13,31 +13,13 @@ namespace Model
 
 	public class KarBaan
 	{
-		public virtual int baannummer
+		public virtual Loods Loods
 		{
 			get;
 			set;
 		}
 
-		public virtual List<KarVeld> velden
-		{
-			get;
-			set;
-		}
-
-		public virtual Loods start
-		{
-			get;
-			set;
-		}
-
-		public virtual KarEindveld eindveld
-		{
-			get;
-			set;
-		}
-
-		public virtual Kar Kar
+		public virtual Eindveld Eindveld
 		{
 			get;
 			set;

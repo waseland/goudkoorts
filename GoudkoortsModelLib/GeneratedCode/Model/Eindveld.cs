@@ -4,19 +4,15 @@
 //     Changes to this file will be lost if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-using Controller;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-public class Main
+namespace Model
 {
-	public virtual GameController GameController
-	{
-		get;
-		set;
-	}
+	using System;
+	using System.Collections.Generic;
+	using System.Linq;
+	using System.Text;
 
+	public class Eindveld : Veld
+	{
+	}
 }
 

@@ -13,6 +13,12 @@ namespace Model
 
 	public class Kar
 	{
+		public virtual Veld KarVeld
+		{
+			get;
+			set;
+		}
+
 	}
 }
 

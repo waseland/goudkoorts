@@ -4,15 +4,26 @@
 //     Changes to this file will be lost if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-namespace Model
+namespace Controller
 {
 	using System;
 	using System.Collections.Generic;
 	using System.Linq;
 	using System.Text;
 
-	public class Haven : SchipBaan
+	public class Main
 	{
+        public Main()
+        {
+            GameController gameController = new GameController();
+        }
+    
+		public virtual GameController GameController
+		{
+			get;
+			set;
+		}
+
 	}
 }
 

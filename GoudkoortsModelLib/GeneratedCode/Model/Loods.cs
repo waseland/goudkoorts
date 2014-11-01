@@ -11,7 +11,7 @@ namespace Model
 	using System.Linq;
 	using System.Text;
 
-	public class Loods : KarBaan
+	public class Loods : Veld
 	{
 		public virtual int ID
 		{

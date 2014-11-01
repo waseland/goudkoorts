@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
   dslVersion="1.0.0.0"
   Id="4a8a28e2-ac00-4cb0-a1b4-fc19eab75821"
   name="Model" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -95,59 +95,7 @@
             </relationshipOwnedElementsInternal>
           </association>
           <association
-            Id="c4304fe6-cd81-41d5-bf8a-9d8ca23f3218"
-            isDerived="false"
-            sourceEndRoleName="Spel"
-            targetEndRoleName="SchipBaan"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="5ea686ea-eabc-441b-9959-41ba3c53d6c9"
-              LastKnownName="SchipBaan"
-              LastKnownLocation="Package_1041.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="eacbf757-4263-42d3-b5ed-ff9cae5e206f"
-                  name="Spel"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="1bd70b5c-777d-4318-ad7c-545e02949caa"
-                  name="SchipBaan"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="02bf43fa-8d49-4995-804f-60e9133cdde6"
-                      name="Lower"
-                      value="2" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="311b54a2-639d-4398-b2d6-35a02e016a9b"
-                      name="Upper"
-                      value="2" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
-            Id="f72117af-fcac-4bc3-bfd7-a46a6d891281"
+            Id="3e1bd85d-e379-4c16-8b3b-cb37126b0c64"
             isDerived="false"
             sourceEndRoleName="Spel"
             targetEndRoleName="KarBaan"
@@ -160,7 +108,7 @@
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="9ad24fec-8d36-48f3-a1e0-68b3dad6ac45"
+                  Id="64e180d2-1633-456f-ab63-79faa61b03c0"
                   name="Spel"
                   isLeaf="false"
                   isStatic="false"
@@ -173,8 +121,112 @@
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="a40e4f47-61ba-4d29-b4c5-31e6cfd4a75a"
+                  Id="f3f2a44e-eb9a-4a78-83e3-ff509853aca9"
                   name="KarBaan"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="0602bae4-08ff-49a7-97fc-cd3114d2e58b"
+                      name="Lower"
+                      value="3" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="f366e4bd-7569-493a-99de-38e638c8817d"
+                      name="Upper"
+                      value="3" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="3f5a85f4-f063-408f-901b-8cd86ab37637"
+            isDerived="false"
+            sourceEndRoleName="Spel"
+            targetEndRoleName="Kar"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="11b61c87-f645-4ea1-add3-1d300c8dab34"
+              LastKnownName="Kar"
+              LastKnownLocation="Package_1041.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1578c383-5119-4dd4-8c7c-fd9d02e3da76"
+                  name="Spel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0626cc78-f045-4af5-95e7-93833878f772"
+                  name="Kar"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="21390819-72e2-4cc4-92e9-8674cdf061ed"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="5625f6d1-5d5c-4741-ae3c-050021b437a4"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="93d20e97-802d-43f8-ad76-f8aede5ec9c6"
+            isDerived="false"
+            sourceEndRoleName="Spel"
+            targetEndRoleName="Schip"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="df8d9d8e-d27e-4538-b764-687773c8ef89"
+              LastKnownName="Schip"
+              LastKnownLocation="Package_1041.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9fd7de4e-5693-4f55-b3a6-d759747c6ab6"
+                  name="Spel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="301a91b6-f295-4e2e-b13b-4ceb19c074e4"
+                  name="Schip"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -186,6 +238,16 @@
             </relationshipOwnedElementsInternal>
           </association>
         </targetEnds>
+        <ownedOperationsInternal>
+          <operation
+            Id="167437a3-78b1-434d-b932-ab922e390dde"
+            name="Setup"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -255,22 +317,6 @@
               LastKnownLocation="Package_1041.uml" />
           </generalization>
           <generalization
-            Id="9de6213a-d1ce-4769-80e6-4d9a4ac01650"
-            isSubstitutable="false">
-            <classMoniker
-              Id="b53c5cd6-dfde-4088-b9a9-034f8011de3c"
-              LastKnownName="Haven"
-              LastKnownLocation="Package_1041.uml" />
-          </generalization>
-          <generalization
-            Id="f7582034-f7e6-4e22-9463-31caf9c98b86"
-            isSubstitutable="false">
-            <classMoniker
-              Id="b4ce1c6e-8ac2-4adf-b609-9d1b4dae9b5c"
-              LastKnownName="SchipEindveld"
-              LastKnownLocation="Package_1041.uml" />
-          </generalization>
-          <generalization
             Id="ccfd0389-61e4-4921-b048-a35d6630db75"
             isSubstitutable="false">
             <classMoniker
@@ -333,11 +379,11 @@
         </appliedStereotypesInternal>
         <generalsInternal>
           <generalization
-            Id="fb397c88-4c84-4481-aa50-2c8fe4cf0dc3"
+            Id="c5dada20-a679-4daf-a059-5342e75a8621"
             isSubstitutable="false">
             <classMoniker
               Id="a1c6710d-1e8b-4c26-84de-0563dda5e025"
-              LastKnownName="KarVeld"
+              LastKnownName="Veld"
               LastKnownLocation="Package_1041.uml" />
           </generalization>
         </generalsInternal>
@@ -382,139 +428,6 @@
             </relationshipOwnedElementsInternal>
           </association>
         </targetEnds>
-        <ownedAttributesInternal>
-          <property
-            Id="feb2c48d-4c5b-4dd1-af7f-c0b2bc8e96f6"
-            name="boolean bovenonder"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="aa5bbac0-5c6e-47ec-95d8-bce51005363a"
-                name="property"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="3a71f737-278e-487c-be3d-600519f4d1d5">
-                    <propertyInstance
-                      Id="20282b29-eb9a-4f9d-8fc4-27a3fc7d0b98"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="83aefd32-12f9-430a-ab98-d8356a9d6753">
-                    <propertyInstance
-                      Id="33542f4c-b99b-472e-8364-16c351bd42f0"
-                      name="Get"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="782bcfc4-9356-4206-8187-970f65a9e8d0">
-                    <propertyInstance
-                      Id="4fbe2822-7916-4d29-b41e-a6907b05fd71"
-                      name="HasBody"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="d9a9d57d-a981-4307-9fb1-52c9abfdf6e3">
-                    <propertyInstance
-                      Id="0474a270-e25f-4096-812c-4e92543069a6"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="4083c61a-4dd1-4f7d-aafa-e30665b90d8f">
-                    <propertyInstance
-                      Id="ecb39a4d-816e-43e3-b241-70724cb30b43"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="f2947780-cdcb-4e80-b15f-f5cad242dcd8">
-                    <propertyInstance
-                      Id="7a44167f-f832-41d8-be63-198cf9cbda48"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="583b777e-35d3-4c0a-b249-2b9717c4afbc">
-                    <propertyInstance
-                      Id="29541d54-c2e6-4ea1-9e7a-eb008cd66064"
-                      name="Set"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-          </property>
-        </ownedAttributesInternal>
-      </class>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <class
-        Id="b53c5cd6-dfde-4088-b9a9-034f8011de3c"
-        name="Haven"
-        isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false">
-        <appliedStereotypesInternal>
-          <stereotypeInstance
-            Id="97fc9a4e-884e-414e-93a5-5fc2371b4180"
-            name="class"
-            profile="CSharpProfile">
-            <propertyInstances>
-              <stereotypeInstanceHasPropertyInstances
-                Id="34bf14a5-6340-4a13-a074-73ac1715a3f7">
-                <propertyInstance
-                  Id="cf66a1ba-95ae-45bf-9ef6-95c08c0feea4"
-                  name="ClrAttributes" />
-              </stereotypeInstanceHasPropertyInstances>
-              <stereotypeInstanceHasPropertyInstances
-                Id="84b05523-10c9-4cc3-97f4-d37435f63ce9">
-                <propertyInstance
-                  Id="319254d4-26f1-4526-a400-e080a9d8e954"
-                  name="IsPartial"
-                  value="false" />
-              </stereotypeInstanceHasPropertyInstances>
-              <stereotypeInstanceHasPropertyInstances
-                Id="0053469e-b2eb-41e4-aa3e-41fc61d69277">
-                <propertyInstance
-                  Id="cae445e5-469d-450a-a8a3-25638e4e2490"
-                  name="IsStatic"
-                  value="false" />
-              </stereotypeInstanceHasPropertyInstances>
-              <stereotypeInstanceHasPropertyInstances
-                Id="569572d2-9e7a-4c03-bf00-ae66e6573006">
-                <propertyInstance
-                  Id="a0a47225-3712-4d02-92ea-050e10abdefe"
-                  name="IsUnsafe"
-                  value="false" />
-              </stereotypeInstanceHasPropertyInstances>
-              <stereotypeInstanceHasPropertyInstances
-                Id="81cf2793-819b-4afd-aab0-fe04db448ca7">
-                <propertyInstance
-                  Id="411896ec-8af4-4af8-a086-73841ad0a8d3"
-                  name="PackageVisibility"
-                  value="internal" />
-              </stereotypeInstanceHasPropertyInstances>
-            </propertyInstances>
-          </stereotypeInstance>
-        </appliedStereotypesInternal>
-        <generalsInternal>
-          <generalization
-            Id="fa546e0f-d6b5-4a76-8ae1-01806e898ade"
-            isSubstitutable="false">
-            <classMoniker
-              Id="5ea686ea-eabc-441b-9959-41ba3c53d6c9"
-              LastKnownName="SchipBaan"
-              LastKnownLocation="Package_1041.uml" />
-          </generalization>
-        </generalsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -569,144 +482,11 @@
         </appliedStereotypesInternal>
         <generalsInternal>
           <generalization
-            Id="c73f01f0-043c-4df6-8f42-9048a007c009"
+            Id="3e08049b-e646-44bc-a331-ab0bb763d6a5"
             isSubstitutable="false">
             <classMoniker
-              Id="57fffd52-6035-49d0-85d0-a9359a11b06f"
-              LastKnownName="KarBaan"
-              LastKnownLocation="Package_1041.uml" />
-          </generalization>
-        </generalsInternal>
-        <ownedAttributesInternal>
-          <property
-            Id="dd22f9d1-1e9a-4a13-be7a-d2b3c2112029"
-            name="Int ID"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="39e661da-9ff0-40ff-8a3f-8404e54d1ac8"
-                name="property"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="1ee48a3b-f65c-48ec-884f-2e046cff5e65">
-                    <propertyInstance
-                      Id="20f07b98-de06-4dfc-85aa-997dd4344004"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="bfc07344-0262-41c5-8fa5-f150d3cbc8db">
-                    <propertyInstance
-                      Id="11706270-aa12-4cdb-a5d5-a004b08a63aa"
-                      name="Get"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="ec6d1677-5c0e-4b6f-97df-ade4cc3f1875">
-                    <propertyInstance
-                      Id="8ba4932f-d099-425f-a01a-1b918562b21a"
-                      name="HasBody"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="a52a2b3a-3822-4418-991d-04fe08a28f73">
-                    <propertyInstance
-                      Id="c49de9c3-38fe-4ebc-9324-55d7a637ad18"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="e33c3bbc-8d7b-4604-ba9b-041ed5f269f8">
-                    <propertyInstance
-                      Id="819e9383-972c-4405-8cca-24f79f5f0615"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="7e91cfd7-ac24-46b9-bf8d-1d4fad7c46d0">
-                    <propertyInstance
-                      Id="559bcc01-d358-4b7b-94e5-4f5a711716e3"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="47161666-28e8-416c-a329-ee02aae5930e">
-                    <propertyInstance
-                      Id="5862eed0-57b5-434d-88cb-1bc39a008ef4"
-                      name="Set"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-          </property>
-        </ownedAttributesInternal>
-      </class>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <class
-        Id="b4ce1c6e-8ac2-4adf-b609-9d1b4dae9b5c"
-        name="SchipEindveld"
-        isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false">
-        <appliedStereotypesInternal>
-          <stereotypeInstance
-            Id="78ff6037-2f35-4c13-b792-4822e67efa73"
-            name="class"
-            profile="CSharpProfile">
-            <propertyInstances>
-              <stereotypeInstanceHasPropertyInstances
-                Id="570a6ba9-2b5d-48e2-bffa-544a2efe0751">
-                <propertyInstance
-                  Id="3ae1eccd-de84-4078-845d-c0ff0518c1df"
-                  name="ClrAttributes" />
-              </stereotypeInstanceHasPropertyInstances>
-              <stereotypeInstanceHasPropertyInstances
-                Id="fe049812-774d-4111-bee7-b4476df42ef7">
-                <propertyInstance
-                  Id="c8607703-81d2-46af-9aba-153663a75373"
-                  name="IsPartial"
-                  value="false" />
-              </stereotypeInstanceHasPropertyInstances>
-              <stereotypeInstanceHasPropertyInstances
-                Id="1b11c523-cce4-414b-b276-d4107201f1bb">
-                <propertyInstance
-                  Id="47d648dc-8e53-4589-9aca-ddd9d6dc257d"
-                  name="IsStatic"
-                  value="false" />
-              </stereotypeInstanceHasPropertyInstances>
-              <stereotypeInstanceHasPropertyInstances
-                Id="7c0ddfa2-32fb-4601-9e77-f1ceac183749">
-                <propertyInstance
-                  Id="a69bd1e0-bd2a-44aa-a212-b019477f9c1d"
-                  name="IsUnsafe"
-                  value="false" />
-              </stereotypeInstanceHasPropertyInstances>
-              <stereotypeInstanceHasPropertyInstances
-                Id="14992c81-fd88-4581-a76d-d4883ba7410f">
-                <propertyInstance
-                  Id="85454398-f304-4117-bf95-f34824f2e445"
-                  name="PackageVisibility"
-                  value="internal" />
-              </stereotypeInstanceHasPropertyInstances>
-            </propertyInstances>
-          </stereotypeInstance>
-        </appliedStereotypesInternal>
-        <generalsInternal>
-          <generalization
-            Id="ab702e43-98d1-42de-b7fd-489bba926a1f"
-            isSubstitutable="false">
-            <classMoniker
-              Id="5ea686ea-eabc-441b-9959-41ba3c53d6c9"
-              LastKnownName="SchipBaan"
+              Id="a1c6710d-1e8b-4c26-84de-0563dda5e025"
+              LastKnownName="Veld"
               LastKnownLocation="Package_1041.uml" />
           </generalization>
         </generalsInternal>
@@ -757,11 +537,11 @@
         </appliedStereotypesInternal>
         <ownedLiterals>
           <enumerationLiteral
-            Id="fb70ab9b-0cd6-487d-903a-86c9f71820fe"
-            name="links" />
+            Id="6e44de91-e8be-48ac-a5ff-4a6e2a614b4e"
+            name="Boven" />
           <enumerationLiteral
-            Id="9266b10a-b82a-43e1-8dc7-afdaa2a7a59c"
-            name="rechts" />
+            Id="b477dc39-b693-4b4f-b1d8-4067d857fbb9"
+            name="Onder" />
         </ownedLiterals>
       </enumeration>
     </packageHasNamedElement>
@@ -817,20 +597,20 @@
         </appliedStereotypesInternal>
         <targetEnds>
           <association
-            Id="a206cf5e-2833-45b3-82d6-9aac86f21c35"
+            Id="854dd37c-b517-4407-83e2-244e617baf3f"
             isDerived="false"
             sourceEndRoleName="KarBaan"
-            targetEndRoleName="Kar"
+            targetEndRoleName="Loods"
             isLeaf="false"
             isAbstract="false">
             <classMoniker
-              Id="11b61c87-f645-4ea1-add3-1d300c8dab34"
-              LastKnownName="Kar"
+              Id="29ad7556-fa4d-4020-a8e6-9caa666b6d9f"
+              LastKnownName="Loods"
               LastKnownLocation="Package_1041.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="aff90ed2-e947-4dee-9c29-df5d673c2cbe"
+                  Id="2e146c9c-de35-4d29-b262-16636636b309"
                   name="KarBaan"
                   isLeaf="false"
                   isStatic="false"
@@ -843,8 +623,47 @@
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="efc5cbe8-4a58-4f8b-baed-c51b8e6f8483"
-                  name="Kar"
+                  Id="6620019b-a1fd-4005-b404-3bf253998984"
+                  name="Loods"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="23c5551d-7082-4602-95f7-5c15ad3235d0"
+            isDerived="false"
+            sourceEndRoleName="KarBaan"
+            targetEndRoleName="Eindveld"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="2a99486e-a2ce-4a00-950d-d55ea41fab55"
+              LastKnownName="Eindveld"
+              LastKnownLocation="Package_1041.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="618a049e-d057-496a-8013-1b6adb547444"
+                  name="KarBaan"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f0d53b88-f51b-4de6-808b-9b9ae817a1a3"
+                  name="Eindveld"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -856,284 +675,6 @@
             </relationshipOwnedElementsInternal>
           </association>
         </targetEnds>
-        <ownedAttributesInternal>
-          <property
-            Id="bcd947e1-6f1d-4e06-9dda-83c124036443"
-            name="int baannummer"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="c683c197-96ee-473b-9cb1-b1903e272a8f"
-                name="property"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="c95f20a1-eb65-4e65-98cb-233c70ce71f2">
-                    <propertyInstance
-                      Id="f49de8ac-d39d-4345-a532-86f7cbb5dfd6"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="a32f00d5-7262-4ed7-bc2c-d5913a476dac">
-                    <propertyInstance
-                      Id="d9980632-a8f9-4cfb-9512-f61fbb64c020"
-                      name="Get"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="dd0c4339-6ed9-4003-87fe-8b393d6d043e">
-                    <propertyInstance
-                      Id="5922eaa3-c3b7-4ce2-9353-e7b6e9c2ae4f"
-                      name="HasBody"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="96ec5574-4a1a-4d28-9204-9fe8f129cda1">
-                    <propertyInstance
-                      Id="a01b2056-37d3-495b-b0ee-5f19fc45d376"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="6fdf8dd3-ef3d-4a48-bb7f-a163532b0227">
-                    <propertyInstance
-                      Id="65054f71-cda2-4415-91eb-f14ca084fa54"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="bc2b3357-4734-4264-93f1-04653bfeecda">
-                    <propertyInstance
-                      Id="cd5978cd-7c7f-49cc-87b9-9b06fd620c34"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="e8726cc3-f74c-4c1e-a7d0-7168a492e29c">
-                    <propertyInstance
-                      Id="7add2447-087f-4ce3-a94c-78971aa134a6"
-                      name="Set"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-          </property>
-          <property
-            Id="b3517be2-3866-4cf4-aa43-63e032867714"
-            name="list&lt;KarVeld&gt; velden"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="6e69edc5-ba9d-460f-a548-d84e57e78012"
-                name="property"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="0bd29375-85c2-4fa8-a9ad-df7a57c091db">
-                    <propertyInstance
-                      Id="794ae698-b2e5-44df-acd5-c6aa2ac87d33"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="a91f0ae6-ee93-4300-93f0-b669783365e6">
-                    <propertyInstance
-                      Id="8fcc0a5d-528b-4047-af09-82f9ac7ea298"
-                      name="Get"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="9ffbc4bf-3d21-40fd-9188-206db5ff37a3">
-                    <propertyInstance
-                      Id="b022e4c1-2535-4211-8424-7e2c7bed5c3a"
-                      name="HasBody"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="5d4e553a-fbfa-49d5-a372-530807cda60c">
-                    <propertyInstance
-                      Id="19637622-7b67-452f-a1f3-deaf1b75977d"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="e9084bb5-e0c1-4939-862e-e60be052ad64">
-                    <propertyInstance
-                      Id="a6ff018a-7085-43f0-8466-e0dbf7c4707e"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="ed428ce1-3ba2-4bf2-a7af-51e5af6245b3">
-                    <propertyInstance
-                      Id="781f1447-4f21-4fac-a932-7007e9b904eb"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="5340353f-8190-49ad-b0ca-0b8b62babe59">
-                    <propertyInstance
-                      Id="b15a920a-15b3-49e4-95f0-511b014c1e0c"
-                      name="Set"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-          </property>
-          <property
-            Id="12eb1741-d992-4c2e-a55c-4c184ad460b3"
-            name="Loods start"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="d66bdf55-b1bd-4409-86eb-89199b956861"
-                name="property"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="5071dc75-9315-496d-9e77-661692612812">
-                    <propertyInstance
-                      Id="c123cd17-cd5b-4172-bb74-81fdc015bf6d"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="748bd761-3f71-4796-a4f1-ffbbfab12775">
-                    <propertyInstance
-                      Id="f9d2c6c6-f2c4-4fbc-848c-fd3893456146"
-                      name="Get"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="4197d258-914a-4eaa-a06c-9934719d2d49">
-                    <propertyInstance
-                      Id="1c01668e-0839-448f-a06c-9e9e6ef277b9"
-                      name="HasBody"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="f531edd0-c2b0-4dcf-b55a-34549f304737">
-                    <propertyInstance
-                      Id="ea3853e9-cc1e-4fbd-b058-f34cc949f342"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="d96fc633-2a2e-4203-b192-f8de36be3e2b">
-                    <propertyInstance
-                      Id="67c5de28-98dc-4abc-9ce2-0ab08a5d5a73"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="02b61489-7a1d-4cf7-b2b6-bf6ab8c73363">
-                    <propertyInstance
-                      Id="68863c61-099e-4358-a286-569824d13c59"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="fe61405a-9f4d-4892-976d-64d5ec424c85">
-                    <propertyInstance
-                      Id="c6dd3e07-55c2-4430-b74b-a5e391ea5c0d"
-                      name="Set"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-          </property>
-          <property
-            Id="dde145ba-efc5-4843-a11e-f563cce6d586"
-            name="Eindveld eindveld"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="45305840-8400-4b2c-bb40-d69e2205b68c"
-                name="property"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="d7cd69ad-e6bc-4b64-8266-6fe0ccd2882a">
-                    <propertyInstance
-                      Id="856de255-0fb8-43a8-8cea-f219d36c1615"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="d93172bf-d4c8-4ff4-9358-481f78067e64">
-                    <propertyInstance
-                      Id="4294677e-c58a-423b-809b-4baf00a3cc81"
-                      name="Get"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="cb349565-8e43-4856-959d-f89321a47a04">
-                    <propertyInstance
-                      Id="ebf6d54d-edbf-4892-ade0-d9a85c571b9f"
-                      name="HasBody"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="473bb95a-6333-4f59-bb5c-c0425aa9adb2">
-                    <propertyInstance
-                      Id="f961c70d-ae3c-483b-8be6-1136f7aa6706"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="458858a3-3df6-41bc-99b8-8b0ecec84838">
-                    <propertyInstance
-                      Id="91a61869-688a-49e6-86db-3d7396e5f724"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="78097fa9-9c80-4654-8582-9b2c2679da7b">
-                    <propertyInstance
-                      Id="bea3a27e-921e-4c84-9e29-6486de0a4d27"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="877113fa-9e2f-4fdb-874b-e1447327b153">
-                    <propertyInstance
-                      Id="19e16503-6634-40b9-b614-e9414d842c5c"
-                      name="Set"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-          </property>
-        </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -1191,7 +732,7 @@
     <packageHasNamedElement>
       <class
         Id="2a99486e-a2ce-4a00-950d-d55ea41fab55"
-        name="KarEindveld"
+        name="Eindveld"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -1240,11 +781,11 @@
         </appliedStereotypesInternal>
         <generalsInternal>
           <generalization
-            Id="8053a416-0b10-4a7a-9fe5-993d8917c524"
+            Id="8bae4c45-9db9-4c10-a19c-a72602b43011"
             isSubstitutable="false">
             <classMoniker
-              Id="57fffd52-6035-49d0-85d0-a9359a11b06f"
-              LastKnownName="KarBaan"
+              Id="a1c6710d-1e8b-4c26-84de-0563dda5e025"
+              LastKnownName="Veld"
               LastKnownLocation="Package_1041.uml" />
           </generalization>
         </generalsInternal>
@@ -1300,6 +841,47 @@
             </propertyInstances>
           </stereotypeInstance>
         </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="dc70a04a-a242-4cdf-a0a9-e6b770d35b4d"
+            isDerived="false"
+            sourceEndRoleName="Kar"
+            targetEndRoleName="KarVeld"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="a1c6710d-1e8b-4c26-84de-0563dda5e025"
+              LastKnownName="Veld"
+              LastKnownLocation="Package_1041.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="385c6ec7-ca4f-4156-a48b-8bb4b2f59e89"
+                  name="Kar"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b0753f12-320c-404f-bbbe-6e0d6a0e9185"
+                  name="KarVeld"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -1362,6 +944,60 @@
               LastKnownLocation="Package_1041.uml" />
           </generalization>
         </generalsInternal>
+        <targetEnds>
+          <association
+            Id="30c5c0c1-0c98-4cb1-8f34-bc567aa641c3"
+            isDerived="false"
+            sourceEndRoleName="Schip"
+            targetEndRoleName="Kade"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="657e0eb9-25c7-4971-a8c0-a8411eff06fe"
+              LastKnownName="Kade"
+              LastKnownLocation="Package_1041.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="28c81375-e534-4ebe-82f2-e429dc284f8c"
+                  name="Schip"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bded7c2e-1ed3-40b4-84e7-36950c2c447e"
+                  name="Kade"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="e5b694e1-0fec-44fa-8363-42b923717916"
+                      name="Lower"
+                      value="0" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="47d0e453-7934-49d1-8f80-88e4a3dac043"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -1370,23 +1006,12 @@
         name="SchipVeld"
         isAbstract="false"
         isLeaf="false"
-        isActiveClass="false">
-        <generalsInternal>
-          <generalization
-            Id="8dbf43f2-d758-466a-b196-0783a459400c"
-            isSubstitutable="false">
-            <classMoniker
-              Id="b53c5cd6-dfde-4088-b9a9-034f8011de3c"
-              LastKnownName="Haven"
-              LastKnownLocation="Package_1041.uml" />
-          </generalization>
-        </generalsInternal>
-      </class>
+        isActiveClass="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
         Id="a1c6710d-1e8b-4c26-84de-0563dda5e025"
-        name="KarVeld"
+        name="Veld"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -1433,16 +1058,173 @@
             </propertyInstances>
           </stereotypeInstance>
         </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="42472f41-0da2-42bf-bef5-1638fd732904"
+            isDerived="false"
+            sourceEndRoleName="KarVeld"
+            targetEndRoleName="Kar"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="11b61c87-f645-4ea1-add3-1d300c8dab34"
+              LastKnownName="Kar"
+              LastKnownLocation="Package_1041.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="63d03439-f822-45a0-97a6-1c8cffa2acd4"
+                  name="KarVeld"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2f0c23cb-27cb-4f48-a9c6-b5ca0960a226"
+                  name="Kar"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="fc201d6f-e481-43f1-af2a-74d99c6a602a"
+                      name="Lower"
+                      value="0" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="68c350cf-86b0-45b9-bf4e-ae7ba9830969"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation
+            Id="d181e7aa-f055-4a31-83b5-9d24fd7b5578"
+            name="IsBezet"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="657e0eb9-25c7-4971-a8c0-a8411eff06fe"
+        name="Kade"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="037a71ce-eaf7-40d6-9677-3b73076170ad"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4b810f64-8a6a-4964-85e3-9686255f359d">
+                <propertyInstance
+                  Id="cdbc8a9c-c685-4a53-bd84-9ecb6a0680aa"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a300d4f4-4d5a-40af-a061-37ccf6df4c8b">
+                <propertyInstance
+                  Id="3931cafa-f7b4-4681-afbc-db49bc44cea5"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b75cced9-29bf-43ef-b71b-19d0f35d08ea">
+                <propertyInstance
+                  Id="99fc8748-43a3-4627-905b-29b01a49a3b7"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="78c191be-6ad7-4a6f-8c0f-d102693c126a">
+                <propertyInstance
+                  Id="0f2dd030-dcdf-446e-9a24-59e338d8ce00"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="73bf9242-613d-4475-9d83-2ef6750db2fb">
+                <propertyInstance
+                  Id="925aa51f-b484-4900-8391-cc91fef5c80c"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
         <generalsInternal>
           <generalization
-            Id="97b59b9c-cf3e-44c9-9bfb-5b7257ad7d13"
+            Id="8a6e097d-4233-4a58-b1df-609494b44221"
             isSubstitutable="false">
             <classMoniker
-              Id="57fffd52-6035-49d0-85d0-a9359a11b06f"
-              LastKnownName="KarBaan"
+              Id="a1c6710d-1e8b-4c26-84de-0563dda5e025"
+              LastKnownName="Veld"
               LastKnownLocation="Package_1041.uml" />
           </generalization>
         </generalsInternal>
+        <targetEnds>
+          <association
+            Id="b8e443e3-b7fb-44cc-b36e-07f36864d9cc"
+            isDerived="false"
+            sourceEndRoleName="Kade"
+            targetEndRoleName="Schip"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="df8d9d8e-d27e-4538-b764-687773c8ef89"
+              LastKnownName="Schip"
+              LastKnownLocation="Package_1041.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f3592a44-05d3-4408-b202-0199de433027"
+                  name="Kade"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7e898ec8-6844-4c50-bd7b-0fb63aac801d"
+                  name="Schip"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
       </class>
     </packageHasNamedElement>
   </packagedElements>

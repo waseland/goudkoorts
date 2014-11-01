@@ -11,8 +11,22 @@ namespace Model
 	using System.Linq;
 	using System.Text;
 
-	public class KarEindveld : KarBaan
+	public class Veld
 	{
+		public virtual Kar Kar
+		{
+			get;
+			set;
+		}
+        
+        public virtual Veld Veld
+        {
+            get;
+            set;
+        }
+
+
+
 	}
 }
 

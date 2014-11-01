@@ -13,14 +13,13 @@ namespace Model
 
 	public class Spel
 	{
-
-		public virtual SchipBaan SchipBaan
+		public virtual Baan Baan
 		{
 			get;
 			set;
 		}
 
-		public virtual KarBaan KarBaan
+		public virtual IEnumerable<KarBaan> KarBaan
 		{
 			get;
 			set;

@@ -54,6 +54,16 @@
             </propertyInstances>
           </stereotypeInstance>
         </appliedStereotypesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="29a9d0a8-3d28-4452-9b78-11781ec3421e"
+            name="ShowBoard"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -106,6 +116,16 @@
             </propertyInstances>
           </stereotypeInstance>
         </appliedStereotypesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="9e631253-5a4c-4b3d-ab42-443bfd105aed"
+            name="GetInput"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
   </packagedElements>
