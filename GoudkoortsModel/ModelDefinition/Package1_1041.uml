@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="72f02f59-8f76-4007-b1fa-6a33f94442be"
   name="Controller" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -181,7 +181,58 @@
             isStatic="false"
             isAbstract="false"
             concurrency="Sequential"
-            isQuery="false" />
+            isQuery="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="cef26fa6-ea29-4397-967e-3e1b1c3397bc"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a9e9ee8b-f6dd-4fc6-b48b-4aabe155977c">
+                    <propertyInstance
+                      Id="6f39844d-f64c-46f8-b6d6-48c0fd54dedb"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="63ca2b15-31e5-405b-9772-bff6ea9e3bce">
+                    <propertyInstance
+                      Id="baff5d3b-4504-491c-9f7d-be8fa7f48953"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b3c40f15-7ed3-48e2-ad20-59a3ff522ace">
+                    <propertyInstance
+                      Id="0603850f-8c74-40eb-bd2a-f7116f055096"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0e8d721a-cb7f-44a2-a35f-b2be6cd9a64d">
+                    <propertyInstance
+                      Id="b2c7c155-366f-4321-b0bc-7dc995046dad"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="91454a75-7e87-4cbe-8799-33d038c7aa00">
+                    <propertyInstance
+                      Id="7a8ba08d-f0b9-4594-994e-564099d56bd6"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="81b39588-b2dc-44ed-8d1c-8640dca10427">
+                    <propertyInstance
+                      Id="d58c6669-b9c7-41ae-b65c-d0625b92981f"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
