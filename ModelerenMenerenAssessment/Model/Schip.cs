@@ -4,18 +4,19 @@
 //     Changes to this file will be lost if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-namespace View
+namespace Model
 {
 	using System;
 	using System.Collections.Generic;
 	using System.Linq;
 	using System.Text;
 
-	public class BoardView
+	public class Schip : SchipBaan
 	{
-		public virtual void ShowBoard()
+		public virtual Kade Kade
 		{
-			throw new System.NotImplementedException();
+			get;
+			set;
 		}
 
 	}

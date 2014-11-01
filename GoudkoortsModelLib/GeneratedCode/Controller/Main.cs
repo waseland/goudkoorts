@@ -13,11 +13,6 @@ namespace Controller
 
 	public class Main
 	{
-        public Main()
-        {
-            GameController gameController = new GameController();
-        }
-    
 		public virtual GameController GameController
 		{
 			get;
