@@ -90,6 +90,16 @@
         </classShape>
       </nestedChildShapes>
     </packageShape>
+<<<<<<< HEAD:GoudkoortsModel/JelmerDiagram.classdiagram.layout
+    <associationConnector edgePoints="[(8.625 : 11.0138396872083); (9.625 : 11.0138396872083)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="1">
+      <associationMoniker Id="b2038366-5e2f-47fe-a2ce-7c2a95cc35b8" />
+      <relativeChildShapes />
+      <moveableDecoratorHostShapes>
+        <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="8.625, 10.75, 0.35485383868217468, 0.14800345897674561" shapeFieldName="SourceRoleName" />
+        <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="8.6994357705116272, 10.807893513689511, 0.125, 0.14800345897674561" shapeFieldName="SourceMultiplicity" />
+        <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="9, 10.5625, 0.58429175615310669, 0.14800345897674561" shapeFieldName="TargetRoleName" />
+        <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="9.48372394964099, 10.814837957720039, 0.125, 0.14800345897674561" shapeFieldName="TargetMultiplicity" />
+=======
     <associationConnector edgePoints="[(8 : 10.9715017294884); (9 : 10.9715017294884)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="1">
       <associationMoniker Id="b2038366-5e2f-47fe-a2ce-7c2a95cc35b8" />
       <relativeChildShapes />
@@ -98,6 +108,7 @@
         <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="8.08138021454215, 10.765555555969584, 0.125, 0.14800345897674561" shapeFieldName="SourceMultiplicity" />
         <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="8.375, 10.520162042280074, 0.58429175615310669, 0.14800345897674561" shapeFieldName="TargetRoleName" />
         <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="8.8656683936715126, 10.772500000000113, 0.125, 0.14800345897674561" shapeFieldName="TargetMultiplicity" />
+>>>>>>> Developement:GoudkoortsModel/AKD v2.classdiagram.layout
       </moveableDecoratorHostShapes>
       <nodes>
         <classShapeMoniker Id="553aeecb-f08f-4be9-b970-8c7846cac59c" />
@@ -115,7 +126,11 @@
         <classShapeMoniker Id="012b45f3-bf93-486d-b357-71b5fb7343bb" />
       </nodes>
     </associationConnector>
+<<<<<<< HEAD:GoudkoortsModel/JelmerDiagram.classdiagram.layout
+    <generalizationConnector edgePoints="[(2 : 10.125); (2 : 9.68783561944961); (8.5 : 9.68783561944961); (8.5 : 9.31283561944961)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
+=======
     <generalizationConnector edgePoints="[(1.875 : 10.625); (1.875 : 9.93783561944961); (7.625 : 9.93783561944961); (7.625 : 9.56283561944961)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
+>>>>>>> Developement:GoudkoortsModel/AKD v2.classdiagram.layout
       <generalizationMoniker Id="eb9f7408-640b-4e7f-afa8-608fb748cc79" />
       <relativeChildShapes />
       <nodes>
@@ -139,7 +154,11 @@
         <classShapeMoniker Id="0d47b7a0-70a5-4c5f-a225-983cc91776b0" />
       </nodes>
     </associationConnector>
+<<<<<<< HEAD:GoudkoortsModel/JelmerDiagram.classdiagram.layout
+    <generalizationConnector edgePoints="[(4.5 : 10.125); (4.5 : 9.68783561944961); (8.5 : 9.68783561944961); (8.5 : 9.31283561944961)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
+=======
     <generalizationConnector edgePoints="[(4.375 : 10.625); (4.375 : 9.93783561944961); (7.625 : 9.93783561944961); (7.625 : 9.56283561944961)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
+>>>>>>> Developement:GoudkoortsModel/AKD v2.classdiagram.layout
       <generalizationMoniker Id="adb43c1c-1315-44f1-8210-e10d72628891" />
       <relativeChildShapes />
       <nodes>
@@ -155,7 +174,11 @@
         <classShapeMoniker Id="0d47b7a0-70a5-4c5f-a225-983cc91776b0" />
       </nodes>
     </generalizationConnector>
+<<<<<<< HEAD:GoudkoortsModel/JelmerDiagram.classdiagram.layout
+    <associationConnector edgePoints="[(14.6875 : 10.5); (14.6875 : 6.90267937441667)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="1">
+=======
     <associationConnector edgePoints="[(12.8777688813412 : 11); (12.8777688813412 : 9.40267937441667)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="1">
+>>>>>>> Developement:GoudkoortsModel/AKD v2.classdiagram.layout
       <associationMoniker Id="edb7b696-4d47-4267-94ca-a9e29650004a" />
       <relativeChildShapes />
       <nodes>
@@ -163,7 +186,11 @@
         <classShapeMoniker Id="b4a791f8-e749-4014-b735-acadb2a6bc6a" />
       </nodes>
     </associationConnector>
+<<<<<<< HEAD:GoudkoortsModel/JelmerDiagram.classdiagram.layout
+    <associationConnector edgePoints="[(14.46875 : 6.90267937441667); (14.46875 : 10.5)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="0..1">
+=======
     <associationConnector edgePoints="[(12.3138844406706 : 9.40267937441667); (12.3138844406706 : 11)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="0..1">
+>>>>>>> Developement:GoudkoortsModel/AKD v2.classdiagram.layout
       <associationMoniker Id="cb51841d-7e76-46e7-a2c6-278650ace823" />
       <relativeChildShapes />
       <moveableDecoratorHostShapes>
@@ -205,7 +232,11 @@
         <classShapeMoniker Id="e22b05a5-f9b0-48b0-9e81-97beeee00067" />
       </nodes>
     </associationConnector>
+<<<<<<< HEAD:GoudkoortsModel/JelmerDiagram.classdiagram.layout
+    <associationConnector edgePoints="[(9.65625 : 7.06283561944962); (9.65625 : 8.03125); (11 : 8.03125)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="*">
+=======
     <associationConnector edgePoints="[(9.60230898882979 : 7.43783561944962); (9.60230898882979 : 8.375)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="*">
+>>>>>>> Developement:GoudkoortsModel/AKD v2.classdiagram.layout
       <associationMoniker Id="6e8a1dbb-d1d5-4a0d-94af-207bb5b80cb5" />
       <relativeChildShapes />
       <moveableDecoratorHostShapes>
@@ -217,12 +248,21 @@
         <classShapeMoniker Id="68239695-1ffc-4dfe-9604-d8d3fb921f37" />
       </nodes>
     </associationConnector>
+<<<<<<< HEAD:GoudkoortsModel/JelmerDiagram.classdiagram.layout
+    <associationConnector edgePoints="[(10 : 6.05208333333333); (13.5 : 6.05208333333333)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="1">
+      <associationMoniker Id="a1d1dc22-958b-4410-a469-b03c3aed0a80" />
+      <relativeChildShapes />
+      <moveableDecoratorHostShapes>
+        <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="13.125, 5.7882436461249984, 0.30678525567054749, 0.14800345897674561" shapeFieldName="TargetRoleName" />
+        <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="13.326388888061047, 6.1632436461249984, 0.125, 0.14800345897674561" shapeFieldName="TargetMultiplicity" />
+=======
     <associationConnector edgePoints="[(10.125 : 6.96114726215601); (12.268492143585 : 6.96114726215601); (12.268492143585 : 8.375)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="0..2">
       <associationMoniker Id="a1d1dc22-958b-4410-a469-b03c3aed0a80" />
       <relativeChildShapes />
       <moveableDecoratorHostShapes>
         <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="12.304937473469703, 8.0793908983469009, 0.30678525567054749, 0.14800345897674561" shapeFieldName="TargetRoleName" />
         <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="11.967643617623775, 8.18294271454215, 0.23137296736240387, 0.14800345897674561" shapeFieldName="TargetMultiplicity" />
+>>>>>>> Developement:GoudkoortsModel/AKD v2.classdiagram.layout
       </moveableDecoratorHostShapes>
       <nodes>
         <classShapeMoniker Id="9de9df37-b5d3-41c1-9826-cbf2794c11e0" />
