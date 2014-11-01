@@ -2,13 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading;
 
 namespace ModelerenMenerenAssessment.Model
 {
     public class Spel
     {
-        private Timer gameTimer = null;
         private int numCalls = 0;
         public KarBaan BaanA
         {
@@ -34,7 +32,9 @@ namespace ModelerenMenerenAssessment.Model
         }
         public Spel()
         {
-            Karren = new List<Kar>();
+            Karren      = new List<Kar>();
+            IsVoorbij   = false;
+            BaanA       = new KarBaan();
         }
         public virtual void Setup()
         {
@@ -58,8 +58,7 @@ namespace ModelerenMenerenAssessment.Model
 
         private void SetupKarBannen(Schip[] schepen)
         {
-            BaanA = new KarBaan();
-            BaanA.Insert(new Loods());
+            BaanA.Insert(new Loods("A"));
             //Maak een testbaan op
             for (int i = 0; i < 5; i++ )
             {
@@ -78,24 +77,15 @@ namespace ModelerenMenerenAssessment.Model
             BaanA.Insert(new Eindveld());
         }
 
-        public void StartSpel()
-        {
-            TimerCallback tcb = this.NieuweStap;
-            AutoResetEvent autoEvent    = new AutoResetEvent(false);
-            Timer gameTimer             = new Timer(tcb, autoEvent, 3000, 500);
-        }
-
         public void StopSpel()
         {
-            gameTimer.Dispose();
             IsVoorbij = true;
         }
 
-        public void NieuweStap(Object stateInfo)
+        public void DoeNieuweStap()
         {
-            Console.WriteLine("Me is called");
             //Elke vier aanroepen, oftewel elke vier seconden komt er een kar bij 
-            if (numCalls % 20 == 0) {
+            if (numCalls % 4 == 0) {
                 Kar kar = new Kar(BaanA.Startveld);
                 Karren.Add(kar);
             }

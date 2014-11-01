@@ -7,6 +7,16 @@ namespace ModelerenMenerenAssessment.Model
 {
     public class Loods : Veld
     {
+        public String Letter
+        {
+            get;
+            private set;
+        }
+
+        public Loods(String letter)
+        {
+            Letter = letter;
+        }
     }
 }
 

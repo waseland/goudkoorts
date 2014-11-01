@@ -7,9 +7,17 @@ namespace ModelerenMenerenAssessment.Model
 {
     public class Depot
     {
-        internal static void NieweLading()
+        public const int GOUDKOERS = 10;
+        protected int aantalLadingen = 0;
+
+        internal void NieweLading()
         {
-            throw new NotImplementedException();
+            aantalLadingen++;
+        }
+
+        public int TotaalAantalPunten()
+        {
+            return (aantalLadingen * GOUDKOERS);
         }
     }
 }

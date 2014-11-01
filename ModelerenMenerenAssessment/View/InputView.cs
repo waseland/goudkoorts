@@ -10,10 +10,15 @@ namespace ModelerenMenerenAssessment.View
     {
         public virtual String VraagOmInput()
         {
-            Console.Write("Input: >");
+            ToonVraagOmInput();
             String input = Console.ReadLine();
 
             return input;
+        }
+
+        public void ToonVraagOmInput()
+        {
+            Console.Write("Input >");
         }
     }
 }

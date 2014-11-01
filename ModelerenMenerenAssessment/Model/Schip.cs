@@ -30,6 +30,7 @@ namespace ModelerenMenerenAssessment.Model
         {
             if (++aantalLadingen == MAX_AANTAL_LADINGEN) {
                 Depot.NieweLading();
+                aantalLadingen = 0;
             }
         }
     }

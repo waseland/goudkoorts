@@ -55,7 +55,7 @@
     <Compile Include="Model\WisselKant.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="View\BoardView.cs" />
+    <Compile Include="View\BordView.cs" />
     <Compile Include="View\InputView.cs" />
   </ItemGroup>
   <ItemGroup>
