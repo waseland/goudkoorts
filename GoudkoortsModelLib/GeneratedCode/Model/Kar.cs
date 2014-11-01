@@ -13,11 +13,23 @@ namespace Model
 
 	public class Kar
 	{
+        private Boolean Lading;
+
+
+        public Kar Kar()
+        {
+            Lading = true;
+        }
 		public virtual Veld KarVeld
 		{
 			get;
 			set;
 		}
+
+        public void LeegKar()
+        {
+            Lading = false;
+        }
 
 	}
 }

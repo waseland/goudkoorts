@@ -11,13 +11,37 @@ namespace Model
 	using System.Linq;
 	using System.Text;
 
-	public class Schip : SchipBaan
+	public class Schip
 	{
+        private int Lading;
+
 		public virtual Kade Kade
 		{
 			get;
 			set;
 		}
+
+        public Schip(Kade kade)
+        {
+            this.Kade = kade;
+            Lading = 0;
+        }
+
+        public Boolean KijkOfVol()
+        {
+            if (Lading == 8)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public void LeegSchip()
+        {
+            Lading = 0;
+        }
 
 	}
 }

@@ -10,15 +10,27 @@ namespace Model
 	using System.Collections.Generic;
 	using System.Linq;
 	using System.Text;
+    using Model;
 
 	public class Kar
 	{
+
+        private Boolean gevuld;
+
 		public virtual Veld KarVeld
 		{
 			get;
 			set;
 		}
 
+        public Kar()
+        {
+            gevuld = true;
+        }
+        public void Move()
+        {
+            //this.KarVeld = KarVeld.next;
+        }
 	}
 }
 

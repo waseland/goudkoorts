@@ -13,6 +13,10 @@ namespace Model
 
 	public class Loods : Veld
 	{
+        public Loods loods
+        {
+
+        }
 	}
 }
 

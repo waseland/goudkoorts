@@ -4,34 +4,16 @@
 //     Changes to this file will be lost if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-namespace Model
+namespace View
 {
 	using System;
 	using System.Collections.Generic;
 	using System.Linq;
 	using System.Text;
 
-	public class Spel
+	public class BoardView
 	{
-		public virtual KarBaan KarBaan
-		{
-			get;
-			set;
-		}
-
-		public virtual Kar Kar
-		{
-			get;
-			set;
-		}
-
-		public virtual Schip Schip
-		{
-			get;
-			set;
-		}
-
-		public virtual void Setup()
+		public virtual void ShowBoard()
 		{
 			throw new System.NotImplementedException();
 		}

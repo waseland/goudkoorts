@@ -4,36 +4,19 @@
 //     Changes to this file will be lost if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-namespace Model
+namespace Controller
 {
 	using System;
 	using System.Collections.Generic;
 	using System.Linq;
 	using System.Text;
 
-	public class Spel
+	public class Main
 	{
-		public virtual KarBaan KarBaan
+		public virtual GameController GameController
 		{
 			get;
 			set;
-		}
-
-		public virtual Kar Kar
-		{
-			get;
-			set;
-		}
-
-		public virtual Schip Schip
-		{
-			get;
-			set;
-		}
-
-		public virtual void Setup()
-		{
-			throw new System.NotImplementedException();
 		}
 
 	}

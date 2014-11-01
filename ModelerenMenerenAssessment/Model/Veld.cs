@@ -19,9 +19,11 @@ namespace Model
 			set;
 		}
 
-		public virtual void IsBezet()
+		public virtual Boolean IsBezet()
 		{
-			throw new System.NotImplementedException();
+			
+
+            return false;
 		}
 
 	}

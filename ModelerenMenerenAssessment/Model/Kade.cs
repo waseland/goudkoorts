@@ -13,11 +13,22 @@ namespace Model
 
 	public class Kade : Veld
 	{
+        public enum Position { Top, Bot };
+        private int position;
+
 		public virtual Schip Schip
 		{
 			get;
 			set;
 		}
+        public Kade(Position position)
+        {
+            this.position = (int)position;
+            Schip = new Schip();
+    
+        }
+
+
 
 	}
 }
