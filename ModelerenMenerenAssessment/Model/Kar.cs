@@ -34,9 +34,7 @@ namespace ModelerenMenerenAssessment.Model
 
         internal bool KanVerplaatsen()
         {
-            return true;
-            /*return ((KarVeld.GetType() != typeof(Eindveld) && KarVeld.VolgendVeld == null) 
-                || (KarVeld.VolgendVeld.IsBezet()));*/
+            return (KarVeld.VolgendVeld != null && KarVeld.VolgendVeld.KanVerplaatsen(KarVeld));
         }
 
         internal void VerplaatsNaarVolgendeVeld()

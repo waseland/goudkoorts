@@ -5,14 +5,25 @@ using System.Text;
 
 namespace ModelerenMenerenAssessment.Model
 {
-    public class Wissel : Veld
+    abstract public class Wissel : Veld
     {
-        public virtual WisselKant WisselKant
+
+        public virtual WisselKant WisselStand
         {
             get;
             set;
         }
 
+        public void WijzigWisselStand()
+        {
+            if (WisselStand == WisselKant.Boven) {
+                WisselStand = WisselKant.Onder;
+            }
+            else
+            {
+                WisselStand = WisselKant.Boven;
+            }
+        }
     }
 }
 

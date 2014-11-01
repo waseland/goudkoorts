@@ -25,5 +25,9 @@ namespace ModelerenMenerenAssessment.Model
             return (Kar != null);
         }
 
+        public virtual Boolean KanVerplaatsen(Veld veld)
+        {
+            return true;
+        }
     }
 }

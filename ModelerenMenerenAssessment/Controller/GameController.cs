@@ -65,7 +65,7 @@ namespace ModelerenMenerenAssessment.Controller
         {
             TimerCallback tcb = NieuweStap;
             AutoResetEvent autoEvent = new AutoResetEvent(false);
-            Timer gameTimer = new Timer(tcb, autoEvent, 3000, 1000);
+            Timer gameTimer = new Timer(tcb, autoEvent, 3000, 2000);
         }
 
         public void NieuweStap(Object stateInfo)

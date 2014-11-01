@@ -915,6 +915,28 @@
               <elementDefinition Id="0b039210-84b1-473b-ab70-a7a7be03ae03" />
             </class>
           </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="9284206a-c2cd-4be8-b51f-13b598cc2f5a" name="EenNaarDubbelWissel" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="9e82d440-0ba5-4cb5-807a-22cde08442e4" />
+              <generalsInternal>
+                <generalization Id="49413ccc-f57d-4685-b638-5a7068770c37" isSubstitutable="false">
+                  <classMoniker Id="70ca8867-7008-497c-aad7-0b049a5516f6" LastKnownName="Wissel" />
+                  <elementDefinition Id="277110d0-8dd7-4aeb-bd1e-e619c4218899" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="98296721-8062-4097-acb9-dc08a93e0d18" name="DubbelNaarEenWissel" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="6461efa9-0ff7-4157-81c9-95de4a2e3ccc" />
+              <generalsInternal>
+                <generalization Id="68697428-40c9-469a-a0a1-5187813a17b5" isSubstitutable="false">
+                  <classMoniker Id="70ca8867-7008-497c-aad7-0b049a5516f6" LastKnownName="Wissel" />
+                  <elementDefinition Id="9035cd5a-0b5f-4733-88b6-11cca5c7efc3" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
         </packagedElements>
       </package>
     </logicalClassDesignerModelHasPackages>

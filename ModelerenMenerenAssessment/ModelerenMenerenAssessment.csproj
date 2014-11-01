@@ -43,6 +43,8 @@
   <ItemGroup>
     <Compile Include="Controller\GameController.cs" />
     <Compile Include="Model\Depot.cs" />
+    <Compile Include="Model\DubbelNaarEenWissel.cs" />
+    <Compile Include="Model\EenNaarDubbelWissel.cs" />
     <Compile Include="Model\Eindveld.cs" />
     <Compile Include="Model\Kade.cs" />
     <Compile Include="Model\Kar.cs" />

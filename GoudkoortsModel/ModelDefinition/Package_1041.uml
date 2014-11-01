@@ -1459,5 +1459,43 @@
         </appliedStereotypesInternal>
       </class>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="9e82d440-0ba5-4cb5-807a-22cde08442e4"
+        name="EenNaarDubbelWissel"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="277110d0-8dd7-4aeb-bd1e-e619c4218899"
+            isSubstitutable="false">
+            <classMoniker
+              Id="3de0c334-e292-4cce-9ae8-eea2075af6d9"
+              LastKnownName="Wissel"
+              LastKnownLocation="Package_1041.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="6461efa9-0ff7-4157-81c9-95de4a2e3ccc"
+        name="DubbelNaarEenWissel"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="9035cd5a-0b5f-4733-88b6-11cca5c7efc3"
+            isSubstitutable="false">
+            <classMoniker
+              Id="3de0c334-e292-4cce-9ae8-eea2075af6d9"
+              LastKnownName="Wissel"
+              LastKnownLocation="Package_1041.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
   </packagedElements>
 </package>
