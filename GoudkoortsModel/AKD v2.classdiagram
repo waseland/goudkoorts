@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="19e853f5-d4cb-486f-991a-ba24fa153634" name="UMLClassDiagram1" linkedPackageId="5370d1b5-d3c9-4fdf-9674-da7204c3f3a7" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="19e853f5-d4cb-486f-991a-ba24fa153634" name="UMLClassDiagram1" linkedPackageId="5370d1b5-d3c9-4fdf-9674-da7204c3f3a7" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <appliedStereotypesInternal>
     <stereotypeInstance Id="fce30e3a-9b6a-45a6-964d-39381e22dd88" name="namespace" profile="CSharpProfile">
       <elementDefinition Id="8f64bacb-3d2f-420b-940d-e23dcc930896" />
@@ -180,11 +180,47 @@
                     </associationHasOwnedEnds>
                     <associationHasOwnedEnds>
                       <memberEnd Id="a01fe10a-1ec5-4f35-acc8-040240cf2b12" name="Schip" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <lowerValueInternal>
+                          <literalString Id="1ce19278-34ec-4680-a5fc-75677a6de9db" name="Lower" value="0">
+                            <elementDefinition Id="e1f6a3b1-8de8-4fcd-ae70-8affd3a55e4a" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="53eed8b7-bc82-47eb-96de-082332c76cf4" name="Upper" value="2">
+                            <elementDefinition Id="fd921527-fff0-4e00-bb98-cd1b64b47f34" />
+                          </literalString>
+                        </upperValueInternal>
                         <elementDefinition Id="301a91b6-f295-4e2e-b13b-4ceb19c074e4" />
                       </memberEnd>
                     </associationHasOwnedEnds>
                   </relationshipOwnedElementsInternal>
                   <elementDefinition Id="93d20e97-802d-43f8-ad76-f8aede5ec9c6" />
+                </association>
+                <association Id="0d589fd0-fa5e-4f4a-8dcb-933ff474cf46" isDerived="false" sourceEndRoleName="Spel" targetEndRoleName="Depot" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="b55608c7-2f76-423e-a21a-7ac33df3efc2" LastKnownName="Depot" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="fe7270bb-89ac-4e3a-a355-0376d432c966" name="Spel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="aabd6d68-9e60-41b7-ab3b-bf667cf4b168" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="7bd20d62-7177-4519-a96d-9f8e314e4329" name="Depot" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <lowerValueInternal>
+                          <literalString Id="1835bcd0-dd49-4184-bb60-d971cdec36f2" name="Lower" value="0">
+                            <elementDefinition Id="e5096603-d427-4e00-b256-7a03934f4bd5" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="f6f1b22a-b986-4199-8f79-7536a4108cd1" name="Upper" value="1">
+                            <elementDefinition Id="2be0e60e-aeb0-4d8f-91a0-c0e2124fa9bd" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="80001f15-aa02-4bf4-84b0-1c9870855c21" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="3a0c62a8-dcbe-4daa-85b9-f9069b3bd481" />
                 </association>
               </targetEnds>
               <ownedOperationsInternal>
@@ -430,7 +466,7 @@
               </appliedStereotypesInternal>
               <elementDefinition Id="57fffd52-6035-49d0-85d0-a9359a11b06f" />
               <targetEnds>
-                <association Id="0d4845fa-fddb-4428-8341-0edf618a6413" isDerived="false" sourceEndRoleName="KarBaan" targetEndRoleName="Loods" isLeaf="false" isAbstract="false">
+                <association Id="0d4845fa-fddb-4428-8341-0edf618a6413" isDerived="false" sourceEndRoleName="KarBaan" targetEndRoleName="Startveld" isLeaf="false" isAbstract="false">
                   <classMoniker Id="6f09f2ad-98f3-4b2a-9547-d474a10d718f" LastKnownName="Loods" />
                   <relationshipOwnedElementsInternal>
                     <associationHasOwnedEnds>
@@ -439,7 +475,17 @@
                       </memberEnd>
                     </associationHasOwnedEnds>
                     <associationHasOwnedEnds>
-                      <memberEnd Id="6df063b3-4c3b-4165-9d59-ad879e79d245" name="Loods" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                      <memberEnd Id="6df063b3-4c3b-4165-9d59-ad879e79d245" name="Startveld" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <lowerValueInternal>
+                          <literalString Id="9ad862c6-7e91-467d-bd6c-aff87544bd83" name="Lower" value="0">
+                            <elementDefinition Id="59f5939d-c5b5-4c42-9a5b-1b82dcc1b70a" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="4cf4e101-181c-4046-bfde-27e28fac7458" name="Upper" value="1">
+                            <elementDefinition Id="075ab5a8-e683-47e4-93bb-bcfb5b35b2ed" />
+                          </literalString>
+                        </upperValueInternal>
                         <elementDefinition Id="6620019b-a1fd-4005-b404-3bf253998984" />
                       </memberEnd>
                     </associationHasOwnedEnds>
@@ -456,6 +502,16 @@
                     </associationHasOwnedEnds>
                     <associationHasOwnedEnds>
                       <memberEnd Id="c0d9ef06-f563-4f21-999f-b02c22a55d20" name="Eindveld" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <lowerValueInternal>
+                          <literalString Id="b9e0fabb-6fce-4437-b840-3e93f65982aa" name="Lower" value="0">
+                            <elementDefinition Id="5dac1e27-3e7f-4254-9f49-31dd4fd71de4" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="7e1b70f3-5db2-4d1d-997e-2d24294f3580" name="Upper" value="1">
+                            <elementDefinition Id="5e91bdf8-639c-47f2-ba56-efc58608392b" />
+                          </literalString>
+                        </upperValueInternal>
                         <elementDefinition Id="f0d53b88-f51b-4de6-808b-9b9ae817a1a3" />
                       </memberEnd>
                     </associationHasOwnedEnds>
@@ -639,6 +695,22 @@
                     </associationHasOwnedEnds>
                   </relationshipOwnedElementsInternal>
                   <elementDefinition Id="30c5c0c1-0c98-4cb1-8f34-bc567aa641c3" />
+                </association>
+                <association Id="72bff3ce-ef74-4cc2-9b54-66bbc7d623c0" isDerived="false" sourceEndRoleName="Schip" targetEndRoleName="Depot" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="b55608c7-2f76-423e-a21a-7ac33df3efc2" LastKnownName="Depot" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="4fd839c4-72e9-48cb-96be-268ac30b9b2a" name="Schip" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="3c390a87-b561-47d4-8c60-1390cfa5c6e0" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="e5a1a65f-45c4-412a-a67d-d1abcbe00d03" name="Depot" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="553cf7d2-a49f-463a-b052-53371924b2b2" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="60108fe0-314d-4d45-82d6-7271740131e6" />
                 </association>
               </targetEnds>
             </class>
@@ -825,6 +897,11 @@
                   <elementDefinition Id="b8e443e3-b7fb-44cc-b36e-07f36864d9cc" />
                 </association>
               </targetEnds>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="b55608c7-2f76-423e-a21a-7ac33df3efc2" name="Depot" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="0b039210-84b1-473b-ab70-a7a7be03ae03" />
             </class>
           </packageHasNamedElement>
         </packagedElements>

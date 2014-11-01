@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="GeneratedCode\Controller\GameController.cs" />
     <Compile Include="GeneratedCode\Controller\Main.cs" />
     <Compile Include="GeneratedCode\Model\Eindveld.cs" />
@@ -54,6 +55,8 @@
     <Compile Include="GeneratedCode\View\BoardView.cs" />
     <Compile Include="GeneratedCode\View\InputView.cs" />
     <Compile Include="Program.cs" />
+=======
+>>>>>>> Developement
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
