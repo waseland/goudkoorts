@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
   dslVersion="1.0.0.0"
   Id="19b44585-270c-4986-a78e-c666a1ae462c"
   name="GoudkoortsModel" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -129,6 +129,573 @@
         Id="25f398f5-f67a-41b9-bc4a-05a188f8ffeb"
         LastKnownName="View"
         LastKnownLocation="Package_1042.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="2e85b2f4-e304-43a9-bdba-b407a8f77110"
+        name="Sequence1"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <ownedCommentsInternal>
+          <comment
+            Id="9fe555a1-3a88-4654-86b8-de48fbde35db">
+            <body>If(True){
+Verwijder uit het Spel
+}
+</body>
+          </comment>
+          <comment
+            Id="65a6fcfd-1c0a-45b6-ac17-d28a479d1ac4">
+            <body>else{
+Continue
+}</body>
+          </comment>
+          <comment
+            Id="f54b4f5c-ad12-4239-a412-c330b838ab22">
+            <body>If{
+Botst == true;
+GameOver
+}
+If(WisselNietDoorgangbaar){
+Sta Stil
+}
+Else{
+MoveYourAss}</body>
+          </comment>
+          <comment
+            Id="a11a71c9-0df3-4fd6-9927-df04eb8f4522">
+            <body>If(Veld isTypeOf Kade){
+VulSchip
+}
+If(Lading == 8){
+punten++
+SchipIsLeeg
+}</body>
+          </comment>
+        </ownedCommentsInternal>
+        <fragments>
+          <behaviorExecutionSpecification
+            Id="93c9ae4d-c068-453e-a03a-7809fa6a4eef"
+            name="BehaviorExecutionSpecification3">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="fb908572-4fd0-458e-947b-71b602c84034"
+                LastKnownName="Game"
+                LastKnownLocation="GoudkoortsModel.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="d1828902-9abc-4a39-939d-b61414df4954"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="GoudkoortsModel.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="3a55de8c-64e3-4fd3-b3e2-079dd48d6d3b"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="GoudkoortsModel.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="aafd1797-2f38-4b16-a5db-64a4d0cce9c2"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="GoudkoortsModel.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="ff5d94d6-c10b-457a-af6a-64528f0af455"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="GoudkoortsModel.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="3a55de8c-64e3-4fd3-b3e2-079dd48d6d3b"
+            name="ExecutionOccurrenceSpecification5">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="eb1556a3-24bd-40ae-acb0-9a3d0c6d0608"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GoudkoortsModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="fb908572-4fd0-458e-947b-71b602c84034"
+                LastKnownName="Game"
+                LastKnownLocation="GoudkoortsModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <lostFoundTarget
+            Id="c4ff4488-c400-4b97-8a7c-19dcf36e5086"
+            name="LostFoundTarget1" />
+          <messageOccurrenceSpecification
+            Id="aafd1797-2f38-4b16-a5db-64a4d0cce9c2"
+            name="MessageOccurrenceSpecification5">
+            <covered>
+              <lifelineMoniker
+                Id="fb908572-4fd0-458e-947b-71b602c84034"
+                LastKnownName="Game"
+                LastKnownLocation="GoudkoortsModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="98773c53-67aa-4959-a3dd-629926bfc9d1"
+            name="BehaviorExecutionSpecification4">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="00153919-2fed-46ed-b169-04040105d939"
+                LastKnownName="Kar"
+                LastKnownLocation="GoudkoortsModel.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="d65f713e-994c-417d-8249-f02a1ec48fb6"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="GoudkoortsModel.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="b3717397-3a2a-45eb-b090-376d355ca3e8"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="GoudkoortsModel.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="e519cf24-6fc5-42d6-acdb-7849eadc6049"
+                LastKnownName="MessageOccurrenceSpecification7"
+                LastKnownLocation="GoudkoortsModel.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="0359e951-065f-48af-b4e4-7d7b31e74fa5"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="GoudkoortsModel.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="b3717397-3a2a-45eb-b090-376d355ca3e8"
+            name="ExecutionOccurrenceSpecification7">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="6256a4f1-9c27-44db-a8d0-96fac1c93045"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GoudkoortsModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="00153919-2fed-46ed-b169-04040105d939"
+                LastKnownName="Kar"
+                LastKnownLocation="GoudkoortsModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="ff5d94d6-c10b-457a-af6a-64528f0af455"
+            name="MessageOccurrenceSpecification6">
+            <covered>
+              <lifelineMoniker
+                Id="fb908572-4fd0-458e-947b-71b602c84034"
+                LastKnownName="Game"
+                LastKnownLocation="GoudkoortsModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="e519cf24-6fc5-42d6-acdb-7849eadc6049"
+            name="MessageOccurrenceSpecification7">
+            <covered>
+              <lifelineMoniker
+                Id="00153919-2fed-46ed-b169-04040105d939"
+                LastKnownName="Kar"
+                LastKnownLocation="GoudkoortsModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="a4d48b72-6c56-4036-8e70-88e96a728e29"
+            name="BehaviorExecutionSpecification5">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="c033e248-1c1b-4abe-a1da-31f984f8dade"
+                LastKnownName="Veld"
+                LastKnownLocation="GoudkoortsModel.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="65f941d8-954d-4781-9980-fdca973c0824"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="GoudkoortsModel.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="8949416b-737c-41ff-9f01-3051286fdf39"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="GoudkoortsModel.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="fe7368af-9dab-4ee7-9f17-ea97c4ea919c"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="GoudkoortsModel.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="2c910744-8690-4e15-9ef5-6ec42f1a061e"
+                LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="GoudkoortsModel.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="cceb1377-ca43-4b68-a34c-e6c1eb45a9c3"
+                LastKnownName="ExecutionOccurrenceSpecification13"
+                LastKnownLocation="GoudkoortsModel.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="2c998b1b-d7cf-4a8c-a597-9c7c90c119bc"
+                LastKnownName="ExecutionOccurrenceSpecification14"
+                LastKnownLocation="GoudkoortsModel.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="8949416b-737c-41ff-9f01-3051286fdf39"
+            name="ExecutionOccurrenceSpecification9">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="8d034972-9c44-4717-8c3b-9f00cf84dbaf"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GoudkoortsModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="c033e248-1c1b-4abe-a1da-31f984f8dade"
+                LastKnownName="Veld"
+                LastKnownLocation="GoudkoortsModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="d1828902-9abc-4a39-939d-b61414df4954"
+            name="ExecutionOccurrenceSpecification6">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="cdd14ab8-5a9c-4c90-9869-f368dace8f0f"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GoudkoortsModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="fb908572-4fd0-458e-947b-71b602c84034"
+                LastKnownName="Game"
+                LastKnownLocation="GoudkoortsModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="fe7368af-9dab-4ee7-9f17-ea97c4ea919c"
+            name="MessageOccurrenceSpecification9">
+            <covered>
+              <lifelineMoniker
+                Id="c033e248-1c1b-4abe-a1da-31f984f8dade"
+                LastKnownName="Veld"
+                LastKnownLocation="GoudkoortsModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="0359e951-065f-48af-b4e4-7d7b31e74fa5"
+            name="MessageOccurrenceSpecification8">
+            <covered>
+              <lifelineMoniker
+                Id="00153919-2fed-46ed-b169-04040105d939"
+                LastKnownName="Kar"
+                LastKnownLocation="GoudkoortsModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="d65f713e-994c-417d-8249-f02a1ec48fb6"
+            name="ExecutionOccurrenceSpecification8">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="b75dd9f4-62ba-4da8-912d-b88e6a4b28bb"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GoudkoortsModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="00153919-2fed-46ed-b169-04040105d939"
+                LastKnownName="Kar"
+                LastKnownLocation="GoudkoortsModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="2c910744-8690-4e15-9ef5-6ec42f1a061e"
+            name="MessageOccurrenceSpecification14">
+            <covered>
+              <lifelineMoniker
+                Id="c033e248-1c1b-4abe-a1da-31f984f8dade"
+                LastKnownName="Veld"
+                LastKnownLocation="GoudkoortsModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="5cdb4174-f45a-4868-9a77-7f5e765d6dea"
+            name="BehaviorExecutionSpecification7">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="c033e248-1c1b-4abe-a1da-31f984f8dade"
+                LastKnownName="Veld"
+                LastKnownLocation="GoudkoortsModel.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="2c998b1b-d7cf-4a8c-a597-9c7c90c119bc"
+                LastKnownName="ExecutionOccurrenceSpecification14"
+                LastKnownLocation="GoudkoortsModel.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="cceb1377-ca43-4b68-a34c-e6c1eb45a9c3"
+                LastKnownName="ExecutionOccurrenceSpecification13"
+                LastKnownLocation="GoudkoortsModel.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="56b0b63a-2fbc-4fc9-8725-354c743306bc"
+                LastKnownName="MessageOccurrenceSpecification15"
+                LastKnownLocation="GoudkoortsModel.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="cceb1377-ca43-4b68-a34c-e6c1eb45a9c3"
+            name="ExecutionOccurrenceSpecification13">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="d94920a0-d513-4f33-8bae-9a7a8de88ee1"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GoudkoortsModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="c033e248-1c1b-4abe-a1da-31f984f8dade"
+                LastKnownName="Veld"
+                LastKnownLocation="GoudkoortsModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="56b0b63a-2fbc-4fc9-8725-354c743306bc"
+            name="MessageOccurrenceSpecification15">
+            <covered>
+              <lifelineMoniker
+                Id="c033e248-1c1b-4abe-a1da-31f984f8dade"
+                LastKnownName="Veld"
+                LastKnownLocation="GoudkoortsModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="2c998b1b-d7cf-4a8c-a597-9c7c90c119bc"
+            name="ExecutionOccurrenceSpecification14">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="d81758de-9980-403c-a48c-e93637ab5e68"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GoudkoortsModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="c033e248-1c1b-4abe-a1da-31f984f8dade"
+                LastKnownName="Veld"
+                LastKnownLocation="GoudkoortsModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="65f941d8-954d-4781-9980-fdca973c0824"
+            name="ExecutionOccurrenceSpecification10">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="c0bfb668-9b32-4fd3-a40e-189205db2a50"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GoudkoortsModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="c033e248-1c1b-4abe-a1da-31f984f8dade"
+                LastKnownName="Veld"
+                LastKnownLocation="GoudkoortsModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="fb908572-4fd0-458e-947b-71b602c84034"
+            name="Game"
+            isActor="false"
+            lifelineDisplayName="Game">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="3a55de8c-64e3-4fd3-b3e2-079dd48d6d3b"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="GoudkoortsModel.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="d1828902-9abc-4a39-939d-b61414df4954"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="GoudkoortsModel.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="00153919-2fed-46ed-b169-04040105d939"
+            name="Kar"
+            isActor="false"
+            lifelineDisplayName="Kar">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="b3717397-3a2a-45eb-b090-376d355ca3e8"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="GoudkoortsModel.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="d65f713e-994c-417d-8249-f02a1ec48fb6"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="GoudkoortsModel.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="c033e248-1c1b-4abe-a1da-31f984f8dade"
+            name="Veld"
+            isActor="false"
+            lifelineDisplayName="Veld">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="8949416b-737c-41ff-9f01-3051286fdf39"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="GoudkoortsModel.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="65f941d8-954d-4781-9980-fdca973c0824"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="GoudkoortsModel.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="e2407398-efaf-459c-8ce6-92cfa59c061c"
+            name="Game::GameLoop"
+            messageKind="Found"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <lostFoundTargetMoniker
+                Id="c4ff4488-c400-4b97-8a7c-19dcf36e5086"
+                LastKnownName="LostFoundTarget1"
+                LastKnownLocation="GoudkoortsModel.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="aafd1797-2f38-4b16-a5db-64a4d0cce9c2"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="GoudkoortsModel.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="54ac5046-c50f-4662-91a7-959dd54e6460"
+            name="IsOpEindveld"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="ff5d94d6-c10b-457a-af6a-64528f0af455"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="GoudkoortsModel.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="e519cf24-6fc5-42d6-acdb-7849eadc6049"
+                LastKnownName="MessageOccurrenceSpecification7"
+                LastKnownLocation="GoudkoortsModel.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="90606b8f-699a-49a5-a02d-9e9e56ccb649"
+            name="GaNaarVolgendVeld"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="0359e951-065f-48af-b4e4-7d7b31e74fa5"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="GoudkoortsModel.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="fe7368af-9dab-4ee7-9f17-ea97c4ea919c"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="GoudkoortsModel.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="bba496f6-ddec-4f5f-b26b-d15a180d56e7"
+            name="KanNietVerplaatsen"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="true">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="2c910744-8690-4e15-9ef5-6ec42f1a061e"
+                LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="GoudkoortsModel.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="56b0b63a-2fbc-4fc9-8725-354c743306bc"
+                LastKnownName="MessageOccurrenceSpecification15"
+                LastKnownLocation="GoudkoortsModel.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="eb1556a3-24bd-40ae-acb0-9a3d0c6d0608"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="cdd14ab8-5a9c-4c90-9869-f368dace8f0f"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="6256a4f1-9c27-44db-a8d0-96fac1c93045"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="b75dd9f4-62ba-4da8-912d-b88e6a4b28bb"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="8d034972-9c44-4717-8c3b-9f00cf84dbaf"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="c0bfb668-9b32-4fd3-a40e-189205db2a50"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="d94920a0-d513-4f33-8bae-9a7a8de88ee1"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="d81758de-9980-403c-a48c-e93637ab5e68"
+        name="ExecutionEvent" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
