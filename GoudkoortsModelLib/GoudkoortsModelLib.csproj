@@ -39,20 +39,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GeneratedCode\Controller\GameController.cs" />
-    <Compile Include="GeneratedCode\Controller\Main.cs" />
-    <Compile Include="GeneratedCode\Model\Eindveld.cs" />
-    <Compile Include="GeneratedCode\Model\Kade.cs" />
-    <Compile Include="GeneratedCode\Model\Kar.cs" />
-    <Compile Include="GeneratedCode\Model\KarBaan.cs" />
-    <Compile Include="GeneratedCode\Model\Loods.cs" />
-    <Compile Include="GeneratedCode\Model\Schip.cs" />
-    <Compile Include="GeneratedCode\Model\Spel.cs" />
-    <Compile Include="GeneratedCode\Model\Veld.cs" />
-    <Compile Include="GeneratedCode\Model\Wissel.cs" />
-    <Compile Include="GeneratedCode\Model\WisselKant.cs" />
-    <Compile Include="GeneratedCode\View\BoardView.cs" />
-    <Compile Include="GeneratedCode\View\InputView.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
