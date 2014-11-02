@@ -36,14 +36,16 @@ namespace ModelerenMenerenAssessment.Model
                 Veld tmp = Eindveld;
 
                 Eindveld        = veld;
-                tmp.VolgendVeld = Eindveld;
+                if (tmp.VolgendVeld == null)
+                {
+                    tmp.VolgendVeld = Eindveld;
+                }
             }
             
             Length++;
 
             return true;
         }
-
     }
 }
 

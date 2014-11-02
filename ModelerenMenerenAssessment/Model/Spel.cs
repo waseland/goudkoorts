@@ -8,7 +8,18 @@ namespace ModelerenMenerenAssessment.Model
     public class Spel
     {
         private Wissel[] wissels;
+        private int numCalls = 0;
         public KarBaan BaanA
+        {
+            get;
+            private set;
+        }
+        public KarBaan BaanB
+        {
+            get;
+            private set;
+        }
+        public KarBaan BaanC
         {
             get;
             private set;
@@ -35,17 +46,19 @@ namespace ModelerenMenerenAssessment.Model
             Karren      = new List<Kar>();
             IsVoorbij   = false;
             BaanA       = new KarBaan();
+            BaanB       = new KarBaan();
+            BaanC       = new KarBaan();
         }
         public virtual void Setup()
         {
             SetupWissels();
             Schip[] schepen = SetupSchepen();
 
-            SetupKarBaanA();
-            SetUpKarBaanB();
-            SetUpKarBaanC();
+            SetupKarBaanA(schepen[0]);
+            SetupKarBaanB();
+            SetupKarBaanC(schepen[1]);
         }
-        private void SetupWissels()
+        protected void SetupWissels()
         {
             wissels = new Wissel[5];
 
@@ -56,7 +69,7 @@ namespace ModelerenMenerenAssessment.Model
             wissels[4] = new EenNaarDubbelWissel(Richtingen.OOST) { WisselStand = WisselKant.Boven };
         }
 
-        private Schip[] SetupSchepen()
+        protected Schip[] SetupSchepen()
         {
             Schip[] schepen = new Schip[2];
 
@@ -70,24 +83,121 @@ namespace ModelerenMenerenAssessment.Model
             return schepen;
         }
 
-        private void SetupKarBaanA()
+        protected void SetupKarBaanA(Schip schip)
         {
             BaanA.Insert(new Loods("A", Richtingen.OOST));
             BaanA.Insert(new Veld(Richtingen.OOST));
             BaanA.Insert(new Veld(Richtingen.OOST));
+            BaanA.Insert(new Veld(Richtingen.ZUID));
             //Eerste dubbel wissel - -\__
             //                     - -/
-            DubbelNaarEenWissel dubbleWissel1 = (DubbelNaarEenWissel)wissels[0];
-            dubbleWissel1.VeldVanBoven = BaanA.Eindveld;
-            BaanA.Insert(dubbleWissel1);
+            DubbelNaarEenWissel dubbleWissel = (DubbelNaarEenWissel)wissels[0];
+            dubbleWissel.VeldVanBoven = BaanA.Eindveld;
+            BaanA.Insert(dubbleWissel);
 
             BaanA.Insert(new Veld(Richtingen.OOST));
             //Eerste dubbel wissel - -\__
             //                     - -/
-            EenNaarDubbelWissel EenNaarDubbel = (EenNaarDubbelWissel)wissels[0];
-            DubbleWissel1.VeldVanBoven = BaanA.Eindveld;
-            BaanA.Insert(DubbleWissel1);
-          
+            EenNaarDubbelWissel eenNaarDubbel1 = (EenNaarDubbelWissel)wissels[1];
+            BaanA.Insert(eenNaarDubbel1);
+            BaanA.Insert(new Veld(Richtingen.OOST));
+            BaanA.Insert(new Veld(Richtingen.OOST));
+            BaanA.Insert(new Veld(Richtingen.OOST));
+
+            DubbelNaarEenWissel dubbleWissel2 = (DubbelNaarEenWissel)wissels[2];
+            dubbleWissel2.VeldVanBoven = BaanA.Eindveld;
+            BaanA.Insert(dubbleWissel2);
+
+            BaanA.Insert(new Veld(Richtingen.OOST));
+            //Omhoog
+            BaanA.Insert(new Veld(Richtingen.NOORD));
+            BaanA.Insert(new Veld(Richtingen.NOORD));
+            BaanA.Insert(new Veld(Richtingen.NOORD));
+            BaanA.Insert(new Veld(Richtingen.NOORD));
+
+            //Weer terug naar af
+            BaanA.Insert(new Veld(Richtingen.WEST));
+            //Voeg een kade toe
+            BaanA.Insert(new Kade(schip, Richtingen.WEST));
+
+            for (int i = 0; i < 7; i++ )
+            {
+                BaanA.Insert(new Veld(Richtingen.WEST));
+            }
+            
+            BaanA.Insert(new Eindveld(Richtingen.WEST));
+        }
+
+        protected void SetupKarBaanB()
+        {
+            BaanB.Insert(new Loods("B", Richtingen.OOST));
+            BaanB.Insert(new Veld(Richtingen.OOST));
+            BaanB.Insert(new Veld(Richtingen.OOST));
+            //Eerste dubbel wissel - -\__
+            //                     - -/
+            DubbelNaarEenWissel dubbleWissel = (DubbelNaarEenWissel)wissels[0];
+            dubbleWissel.VeldVanOnder = BaanB.Eindveld;
+            BaanB.Insert(dubbleWissel);
+
+            Veld onderVeld = new Veld(Richtingen.ZUID);
+            EenNaarDubbelWissel eenNaarDubbel = (EenNaarDubbelWissel)wissels[1];
+            eenNaarDubbel.OnderVeld = onderVeld;
+            //onderVeld
+            BaanB.Insert(onderVeld);
+            BaanB.Insert(new Veld(Richtingen.OOST));
+
+            DubbelNaarEenWissel dubbleWissel3 = (DubbelNaarEenWissel)wissels[3];
+            dubbleWissel3.VeldVanBoven = BaanB.Eindveld;
+            BaanB.Insert(dubbleWissel3);
+
+            BaanB.Insert(new Veld(Richtingen.OOST));
+            
+            EenNaarDubbelWissel eenNaarDubbel4 = (EenNaarDubbelWissel)wissels[4];
+            BaanB.Insert(eenNaarDubbel4);
+            BaanB.Insert(new Veld(Richtingen.NOORD));
+            BaanB.Insert(new Veld(Richtingen.OOST));
+
+            DubbelNaarEenWissel dubbleWissel2 = (DubbelNaarEenWissel)wissels[2];
+            dubbleWissel2.VeldVanOnder = BaanB.Eindveld;
+            BaanB.Insert(dubbleWissel3);
+        }
+
+        protected void SetupKarBaanC(Schip schip)
+        {
+            BaanC.Insert(new Loods("C", Richtingen.OOST));
+            for (int i = 0; i < 6; i++)
+            {
+                BaanC.Insert(new Veld(Richtingen.OOST));
+            }
+
+            BaanC.Insert(new Veld(Richtingen.NOORD));
+
+            DubbelNaarEenWissel dubbleWissel3 = (DubbelNaarEenWissel)wissels[3];
+            dubbleWissel3.VeldVanOnder = BaanC.Eindveld;
+            BaanC.Insert(dubbleWissel3);
+
+
+            Veld onderVeld = new Veld(Richtingen.ZUID);
+            EenNaarDubbelWissel eenNaarDubbel4 = (EenNaarDubbelWissel)wissels[4];
+            eenNaarDubbel4.OnderVeld = onderVeld;
+
+            BaanC.Insert(onderVeld);
+            BaanC.Insert(new Veld(Richtingen.OOST));
+            BaanC.Insert(new Veld(Richtingen.OOST));
+            BaanC.Insert(new Veld(Richtingen.OOST));
+            BaanC.Insert(new Veld(Richtingen.ZUID));
+            
+            //Weer terug naar af
+            BaanC.Insert(new Veld(Richtingen.WEST));
+            //Voeg een kade toe
+            BaanC.Insert(new Kade(schip, Richtingen.WEST));
+
+            for (int i = 0; i < 9; i++ )
+            {
+                BaanC.Insert(new Veld(Richtingen.WEST));
+            }
+
+            BaanC.Insert(new Eindveld(Richtingen.WEST));
         }
 
         public void StopSpel()
