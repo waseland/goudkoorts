@@ -1240,6 +1240,45 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="c9ddcbd9-a077-4637-810d-6647cd7c492e"
+            isDerived="false"
+            sourceEndRoleName="Veld"
+            targetEndRoleName="Richting"
+            isLeaf="false"
+            isAbstract="false">
+            <enumerationMoniker
+              Id="4307170b-0aab-42ab-93cb-7598aae37b0d"
+              LastKnownName="Richingen"
+              LastKnownLocation="Package_1041.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="040aacce-1bc4-41a5-914a-5a2998618d5b"
+                  name="Veld"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8d5f7c8b-6f87-4d5c-88d3-cdfe78e211c9"
+                  name="Richting"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
         <ownedOperationsInternal>
           <operation
@@ -1496,6 +1535,28 @@
           </generalization>
         </generalsInternal>
       </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="4307170b-0aab-42ab-93cb-7598aae37b0d"
+        name="Richingen"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="d7febcbc-2c67-4433-bea1-edf5e6394fcd"
+            name="NOORD" />
+          <enumerationLiteral
+            Id="566c7981-bc5d-47c6-85c4-ae70a27349fc"
+            name="ZUID" />
+          <enumerationLiteral
+            Id="1d4e7831-b51a-4123-9f4f-20ef01f13a86"
+            name="OOST" />
+          <enumerationLiteral
+            Id="2be6d7ef-5968-4053-a429-86888698b11d"
+            name="WEST" />
+        </ownedLiterals>
+      </enumeration>
     </packageHasNamedElement>
   </packagedElements>
 </package>

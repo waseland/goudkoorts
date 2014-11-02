@@ -37,5 +37,7 @@ namespace ModelerenMenerenAssessment.Model
                 base.VolgendVeld = value;
             }
         }
+
+        public EenNaarDubbelWissel(Richtingen richting) : base(richting) { }
     }
 }

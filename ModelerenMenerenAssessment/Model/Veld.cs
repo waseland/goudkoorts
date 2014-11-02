@@ -20,14 +20,30 @@ namespace ModelerenMenerenAssessment.Model
             set;
         }
 
+        public virtual Richtingen Richting
+        {
+            get;
+            private set;
+        }
+
+        public Veld(Richtingen richting)
+        {
+            Richting = richting;
+        }
+
         public virtual Boolean IsBezet()
         {
             return (Kar != null);
         }
 
-        public virtual Boolean KanVerplaatsen(Veld veld)
+        public virtual Boolean KanVerplaatsen()
         {
-            return true;
+            return (VolgendVeld != null && MagOpVeldStaan(VolgendVeld));
+        }
+
+        public virtual Boolean MagOpVeldStaan(Veld veld)
+        {
+            return (!veld.IsBezet());
         }
     }
 }

@@ -7,12 +7,13 @@ namespace ModelerenMenerenAssessment.Model
 {
     abstract public class Wissel : Veld
     {
-
         public virtual WisselKant WisselStand
         {
             get;
             set;
         }
+
+        public Wissel(Richtingen richting) : base(richting) { }
 
         public void WijzigWisselStand()
         {

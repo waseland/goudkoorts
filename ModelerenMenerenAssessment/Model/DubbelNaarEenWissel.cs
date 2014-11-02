@@ -8,9 +8,10 @@ namespace ModelerenMenerenAssessment.Model
 {
     class DubbelNaarEenWissel : Wissel
     {
+        public DubbelNaarEenWissel(Richtingen richting) : base(richting) { }
         public Veld VeldVanBoven { get; set; }
         public Veld VeldVanOnder { get; set; }
-        public override Boolean KanVerplaatsen(Veld veld)
+        public override Boolean MagOpVeldStaan(Veld veld)
         {
             //Is het veld, afkanelijk van de stand, het vorig veld
             if ((WisselStand == WisselKant.Boven && VeldVanBoven != veld)

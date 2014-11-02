@@ -13,7 +13,7 @@ namespace ModelerenMenerenAssessment.Model
             private set;
         }
 
-        public Loods(String letter)
+        public Loods(String letter, Richtingen richting) : base (richting)
         {
             Letter = letter;
         }

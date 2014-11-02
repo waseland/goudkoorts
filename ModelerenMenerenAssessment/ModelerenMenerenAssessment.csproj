@@ -50,6 +50,7 @@
     <Compile Include="Model\Kar.cs" />
     <Compile Include="Model\KarBaan.cs" />
     <Compile Include="Model\Loods.cs" />
+    <Compile Include="Model\Richtingen.cs" />
     <Compile Include="Model\Schip.cs" />
     <Compile Include="Model\Spel.cs" />
     <Compile Include="Model\Veld.cs" />

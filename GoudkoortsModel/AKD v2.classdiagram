@@ -756,6 +756,22 @@
                   </relationshipOwnedElementsInternal>
                   <elementDefinition Id="42472f41-0da2-42bf-bef5-1638fd732904" />
                 </association>
+                <association Id="2c7ab1ab-f8ff-499f-b7b3-26e74661bc30" isDerived="false" sourceEndRoleName="Veld" targetEndRoleName="Richting" isLeaf="false" isAbstract="false">
+                  <enumerationMoniker Id="d54ba178-090e-422b-9b4e-71c3931748ca" LastKnownName="Richingen" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="89178da6-5700-45ec-ab11-5763484cff85" name="Veld" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="040aacce-1bc4-41a5-914a-5a2998618d5b" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="9ae0443d-1421-4d82-998c-157e095bfdc4" name="Richting" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="8d5f7c8b-6f87-4d5c-88d3-cdfe78e211c9" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="c9ddcbd9-a077-4637-810d-6647cd7c492e" />
+                </association>
               </targetEnds>
               <ownedOperationsInternal>
                 <operation Id="0fb7a629-a369-4820-b0ed-4a6bc9c8dcda" name="IsBezet" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
@@ -936,6 +952,25 @@
                 </generalization>
               </generalsInternal>
             </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <enumeration Id="d54ba178-090e-422b-9b4e-71c3931748ca" name="Richingen" isAbstract="false" isLeaf="false">
+              <elementDefinition Id="4307170b-0aab-42ab-93cb-7598aae37b0d" />
+              <ownedLiterals>
+                <enumerationLiteral Id="fdae7c24-6a87-4b0b-8098-78d36a77938d" name="NOORD">
+                  <elementDefinition Id="d7febcbc-2c67-4433-bea1-edf5e6394fcd" />
+                </enumerationLiteral>
+                <enumerationLiteral Id="8fbd35f4-76de-4471-83bd-a161374b9801" name="ZUID">
+                  <elementDefinition Id="566c7981-bc5d-47c6-85c4-ae70a27349fc" />
+                </enumerationLiteral>
+                <enumerationLiteral Id="aba64685-ba5b-4462-bd8a-c1deb586901f" name="OOST">
+                  <elementDefinition Id="1d4e7831-b51a-4123-9f4f-20ef01f13a86" />
+                </enumerationLiteral>
+                <enumerationLiteral Id="ff61a0de-c431-4e76-b943-d34c19dedfbc" name="WEST">
+                  <elementDefinition Id="2be6d7ef-5968-4053-a429-86888698b11d" />
+                </enumerationLiteral>
+              </ownedLiterals>
+            </enumeration>
           </packageHasNamedElement>
         </packagedElements>
       </package>

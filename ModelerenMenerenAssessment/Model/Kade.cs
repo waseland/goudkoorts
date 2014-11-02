@@ -27,9 +27,10 @@ namespace ModelerenMenerenAssessment.Model
             }
         }
 
-        public Kade(Schip schip)
+        public Kade(Schip schip, Richtingen richting)
+            : base(richting)
         {
-            Schip = schip;
+            Schip = schip;   
         }
 
         protected void LaadKarLadingAf () {

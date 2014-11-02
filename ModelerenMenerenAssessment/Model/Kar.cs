@@ -34,7 +34,7 @@ namespace ModelerenMenerenAssessment.Model
 
         internal bool KanVerplaatsen()
         {
-            return (KarVeld.VolgendVeld != null && KarVeld.VolgendVeld.KanVerplaatsen(KarVeld));
+            return KarVeld.KanVerplaatsen();
         }
 
         internal void VerplaatsNaarVolgendeVeld()

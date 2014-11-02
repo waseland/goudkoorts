@@ -11,6 +11,7 @@ namespace ModelerenMenerenAssessment.Controller
 
     public class GameController
     {
+        private int counter = 0;
         public virtual BordView BordView
         {
             get;
@@ -71,8 +72,9 @@ namespace ModelerenMenerenAssessment.Controller
         public void NieuweStap(Object stateInfo)
         {
             Spel.DoeNieuweStap();
-            BordView.ShowBoard(Spel);
+            /*BordView.ShowBoard(Spel);
             InputView.ToonVraagOmInput();
+            Console.WriteLine("Called: "+ (++counter));*/
         }
     }
 }

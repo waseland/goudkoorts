@@ -7,7 +7,7 @@ namespace ModelerenMenerenAssessment.Model
 {
     public class Spel
     {
-        private int numCalls = 0;
+        private Wissel[] wissels;
         public KarBaan BaanA
         {
             get;
@@ -38,8 +38,22 @@ namespace ModelerenMenerenAssessment.Model
         }
         public virtual void Setup()
         {
+            SetupWissels();
             Schip[] schepen = SetupSchepen();
-            SetupKarBannen(schepen);
+
+            SetupKarBaanA();
+            SetUpKarBaanB();
+            SetUpKarBaanC();
+        }
+        private void SetupWissels()
+        {
+            wissels = new Wissel[5];
+
+            wissels[0] = new DubbelNaarEenWissel(Richtingen.OOST) { WisselStand = WisselKant.Boven };
+            wissels[1] = new EenNaarDubbelWissel(Richtingen.OOST) { WisselStand = WisselKant.Boven };
+            wissels[2] = new DubbelNaarEenWissel(Richtingen.OOST) { WisselStand = WisselKant.Boven };
+            wissels[3] = new DubbelNaarEenWissel(Richtingen.OOST) { WisselStand = WisselKant.Boven };
+            wissels[4] = new EenNaarDubbelWissel(Richtingen.OOST) { WisselStand = WisselKant.Boven };
         }
 
         private Schip[] SetupSchepen()
@@ -56,25 +70,24 @@ namespace ModelerenMenerenAssessment.Model
             return schepen;
         }
 
-        private void SetupKarBannen(Schip[] schepen)
+        private void SetupKarBaanA()
         {
-            BaanA.Insert(new Loods("A"));
-            //Maak een testbaan op
-            for (int i = 0; i < 5; i++ )
-            {
-                BaanA.Insert(new Veld());
-            }
+            BaanA.Insert(new Loods("A", Richtingen.OOST));
+            BaanA.Insert(new Veld(Richtingen.OOST));
+            BaanA.Insert(new Veld(Richtingen.OOST));
+            //Eerste dubbel wissel - -\__
+            //                     - -/
+            DubbelNaarEenWissel dubbleWissel1 = (DubbelNaarEenWissel)wissels[0];
+            dubbleWissel1.VeldVanBoven = BaanA.Eindveld;
+            BaanA.Insert(dubbleWissel1);
 
-            BaanA.Insert(new Kade(schepen[0]));
-
-            //Maak een testbaan op
-            for (int i = 0; i < 5; i++)
-            {
-                BaanA.Insert(new Veld());
-            }
-
-            BaanA.Insert(new Kade(schepen[1]));
-            BaanA.Insert(new Eindveld());
+            BaanA.Insert(new Veld(Richtingen.OOST));
+            //Eerste dubbel wissel - -\__
+            //                     - -/
+            EenNaarDubbelWissel EenNaarDubbel = (EenNaarDubbelWissel)wissels[0];
+            DubbleWissel1.VeldVanBoven = BaanA.Eindveld;
+            BaanA.Insert(DubbleWissel1);
+          
         }
 
         public void StopSpel()
@@ -84,6 +97,7 @@ namespace ModelerenMenerenAssessment.Model
 
         public void DoeNieuweStap()
         {
+            
             //Elke vier aanroepen, oftewel elke vier seconden komt er een kar bij 
             if (numCalls % 4 == 0) {
                 Kar kar = new Kar(BaanA.Startveld);
@@ -95,8 +109,10 @@ namespace ModelerenMenerenAssessment.Model
                 foreach (Kar kar in Karren){
                     if (!kar.KanVerplaatsen())
                     {
-                        StopSpel();
-                        return;
+                        Console.Clear();
+                        Console.WriteLine("Kan Kar niet verplaatsen");
+                        /*StopSpel();
+                        return;*/
                     } 
                     else 
                     {
