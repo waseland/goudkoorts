@@ -204,7 +204,19 @@ namespace ModelerenMenerenAssessment.Model
         {
             IsVoorbij = true;
         }
+        public void VeranderWisselStand(String wissel)
+        {
+            int wisselID = Convert.ToInt16(wissel);
 
+            if (wisselID > 0 && wisselID <= 5)
+            {
+                wissels[wisselID - 1].WijzigWisselStand();
+            }
+            else
+            {
+                throw new Exception("Geen geldige input");
+            }
+        }
         public void DoeNieuweStap()
         {
             
