@@ -13,19 +13,6 @@ namespace ModelerenMenerenAssessment.Model
             private set;
         }
 
-        public override Kar Kar
-        {
-            get
-            {
-                return base.Kar;
-            }
-            set
-            {
-                base.Kar = value;
-
-                LaadKarLadingAf();
-            }
-        }
 
         public Kade(Schip schip, Richtingen richting)
             : base(richting)
@@ -36,6 +23,17 @@ namespace ModelerenMenerenAssessment.Model
         protected void LaadKarLadingAf () {
             Schip.LadingErBij();
             Kar.HeeftLading = false;
+        }
+
+        public override Boolean PlaatsKarOpVeld(Kar kar)
+        {
+            if (base.PlaatsKarOpVeld(kar))
+            {
+                LaadKarLadingAf();
+                return true;
+            }
+
+            return false;
         }
     }
 }

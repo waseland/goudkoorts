@@ -18,7 +18,12 @@ namespace ModelerenMenerenAssessment.View
 
         public void ToonVraagOmInput()
         {
-            //Console.Write("Input >");
+            Console.Write("Input >");
+        }
+
+        public void ToonFoutMelding (String foutMelding)
+        {
+            Console.Write(foutMelding + "\n");
         }
     }
 }

@@ -14,13 +14,19 @@ namespace ModelerenMenerenAssessment.Model
             set;
         }
 
+        public Veld BovenVeld
+        {
+            get;
+            set;
+        }
+
         public override Veld VolgendVeld
         {
             get
             {
                 if (WisselStand == WisselKant.Boven)
                 {
-                    return base.VolgendVeld;
+                    return BovenVeld;
                 }
                 else if (WisselStand == WisselKant.Onder)
                 {
@@ -34,7 +40,7 @@ namespace ModelerenMenerenAssessment.Model
             }
             set
             {
-                base.VolgendVeld = value;
+                BovenVeld = value;
             }
         }
 

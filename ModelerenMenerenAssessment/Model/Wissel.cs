@@ -7,7 +7,7 @@ namespace ModelerenMenerenAssessment.Model
 {
     abstract public class Wissel : Veld
     {
-        public virtual WisselKant WisselStand
+        public WisselKant WisselStand
         {
             get;
             set;

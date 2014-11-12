@@ -36,14 +36,33 @@ namespace ModelerenMenerenAssessment.Model
             return (Kar != null);
         }
 
-        public virtual Boolean KanVerplaatsen()
+        internal virtual Boolean VerplaatsKarNaarVolgendVeld()
         {
-            return (VolgendVeld != null && MagOpVeldStaan(VolgendVeld));
+            if (VolgendVeld == null)
+            {
+                throw new Exception("Geen volgend veld");
+            }
+
+            if (VolgendVeld.PlaatsKarOpVeld(Kar))
+            {
+                Kar = null;
+                return true;
+            }
+
+            return false;
         }
 
-        public virtual Boolean MagOpVeldStaan(Veld veld)
+        public virtual Boolean PlaatsKarOpVeld(Kar kar)
         {
-            return (!veld.IsBezet());
+            if (IsBezet())
+            {
+                return false;
+            } else {
+
+                Kar = kar;
+                kar.Veld = this;
+                return true;
+            }
         }
     }
 }

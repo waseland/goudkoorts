@@ -11,6 +11,14 @@ namespace ModelerenMenerenAssessment.Model
         NOORD,
         ZUID,
         OOST,
-        WEST
+        WEST,
+        HOEK_NOORD_OOST,
+        HOEK_NOORD_WEST,
+        HOEK_ZUID_WEST,
+        HOEK_ZUID_OOST,
+        HOEK_WEST_ZUID,
+        HOEK_OOST_NOORD,
+        HOEK_OOST_ZUID,
+        NEUTRAAL
     }
 }

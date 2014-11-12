@@ -8,40 +8,23 @@ namespace ModelerenMenerenAssessment.Model
     public class Kar
     {
         protected Veld veld;
-        public virtual Veld KarVeld
+        public virtual Veld Veld
         {
-            get
-            {
-                return veld;
-            }
-            set 
-            {
-                veld = value;
-
-                if (value != null){
-                    value.Kar = this;
-                }
-            }
+            get;
+            set;
         }
 
-        public static bool HeeftLading { get; set; }
+        public Boolean HeeftLading { get; set; }
 
         public Kar(Veld startVeld)
         {
-            KarVeld = startVeld;
+            startVeld.PlaatsKarOpVeld(this);
             HeeftLading = true;
         }
 
-        internal bool KanVerplaatsen()
+        public Boolean Verplaats()
         {
-            return KarVeld.KanVerplaatsen();
-        }
-
-        internal void VerplaatsNaarVolgendeVeld()
-        {
-            Veld nieuwVeld  = KarVeld.VolgendVeld;
-            KarVeld.Kar     = null;
-            KarVeld         = nieuwVeld;
+            return Veld.VerplaatsKarNaarVolgendVeld();
         }
     }
 }

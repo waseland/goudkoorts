@@ -11,7 +11,8 @@ namespace ModelerenMenerenAssessment.Controller
 
     public class GameController
     {
-        private int counter = 0;
+        private Timer gameTimer;
+        //private int counter = 0;
         public virtual BordView BordView
         {
             get;
@@ -43,38 +44,48 @@ namespace ModelerenMenerenAssessment.Controller
         {
             StartTimer();
             String input;
+            Boolean heeftFoutMelding = false;
+            String foutMelding = "";
 
             while(!Spel.IsVoorbij) {
                 BordView.ShowBoard(Spel);
+                if (heeftFoutMelding) {
+                    InputView.ToonFoutMelding(foutMelding);
+                }
                 input = InputView.VraagOmInput();
+                heeftFoutMelding = false;
                 //Speller wil stoppen
                 if (input.Equals("s")) {
                     break;
                 }
                 else
                 {
-                    
-                    switch (input) {
-                        default:
-                        break;   
+                    try
+                    {
+                        Spel.VeranderWisselStand(input);
+                    }
+                    catch (Exception e) {
+                        heeftFoutMelding = true;
+                        foutMelding = e.Message;
                     }
                 }
-                
             }
         }
         public void StartTimer()
         {
-            /*TimerCallback tcb = NieuweStap;
-            AutoResetEvent autoEvent = new AutoResetEvent(false);
-            Timer gameTimer = new Timer(tcb, autoEvent, 3000, 2000);*/
+            TimerCallback tcb = NieuweStap;
+            gameTimer = new Timer(tcb, null, 1000, 1500);
         }
 
         public void NieuweStap(Object stateInfo)
         {
             Spel.DoeNieuweStap();
-            /*BordView.ShowBoard(Spel);
+            BordView.ShowBoard(Spel);
             InputView.ToonVraagOmInput();
-            Console.WriteLine("Called: "+ (++counter));*/
+
+            if (Spel.IsVoorbij) {
+                gameTimer.Dispose();
+            }
         }
     }
 }
