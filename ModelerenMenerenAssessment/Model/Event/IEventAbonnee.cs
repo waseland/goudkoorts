@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ModelerenMenerenAssessment.Model.Event
 {
-    interface IEventAbonnee
+    public interface IEventAbonnee
     {
         void informeer(Event gebeurtenis);
     }

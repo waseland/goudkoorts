@@ -74,7 +74,7 @@ namespace ModelerenMenerenAssessment.Controller
         public void StartTimer()
         {
             TimerCallback tcb = NieuweStap;
-            gameTimer = new Timer(tcb, null, 1000, 1500);
+            gameTimer = new Timer(tcb, null, 500, 1000);
         }
 
         public void NieuweStap(Object stateInfo)

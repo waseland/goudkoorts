@@ -26,6 +26,7 @@ namespace ModelerenMenerenAssessment.Model
         protected void LaadKarLadingAf () {
             Schip.LadingErBij();
             Kar.HeeftLading = false;
+            eventService.publiseer(new PuntenGescoordEvent(1));
         }
 
         public override Boolean PlaatsKarOpVeld(Kar kar)
@@ -33,8 +34,6 @@ namespace ModelerenMenerenAssessment.Model
             if (base.PlaatsKarOpVeld(kar))
             {
                 LaadKarLadingAf();
-                eventService.publiseer( new PuntenGescoordEvent(1) );
-
                 return true;
             }
 

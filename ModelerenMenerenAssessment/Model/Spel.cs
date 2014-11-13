@@ -78,9 +78,9 @@ namespace ModelerenMenerenAssessment.Model
         {
             Schip[] schepen = new Schip[2];
 
-            Depot           = new Depot();
-            Schip schipA    = new Schip(Depot);
-            Schip schipB    = new Schip(Depot);
+            
+            Schip schipA    = new Schip();
+            Schip schipB    = new Schip();
 
             schepen[0]      = schipA;
             schepen[1]      = schipB;

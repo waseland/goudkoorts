@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ModelerenMenerenAssessment.Model.Event
 {
-    class PuntenGescoordEvent : Event
+    public class PuntenGescoordEvent : Event
     {
         public int AantalPunten { get; private set; }
         public PuntenGescoordEvent(int aantalPunten) : base(Events.NIEUWE_PUNTEN)

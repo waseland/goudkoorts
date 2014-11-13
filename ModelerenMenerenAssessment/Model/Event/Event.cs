@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ModelerenMenerenAssessment.Model.Event
 {
-    abstract class Event
+    public abstract class Event
     {
         public Events Type { get; protected set; }
         public Event(Events gebeurtenisType)

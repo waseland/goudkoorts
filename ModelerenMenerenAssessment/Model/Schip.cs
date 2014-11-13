@@ -17,10 +17,15 @@ namespace ModelerenMenerenAssessment.Model
             set;
         }
 
+        public Schip () 
+        {
+            eventService = EventService.GeefInstantie();
+        }
+
         internal void LadingErBij()
         {
             if (++aantalLadingen == MAX_AANTAL_LADINGEN) {
-                eventService.publiseer(new PuntenGescoordEvent(1));
+                eventService.publiseer(new PuntenGescoordEvent(10));
                 aantalLadingen = 0;
             }
         }
