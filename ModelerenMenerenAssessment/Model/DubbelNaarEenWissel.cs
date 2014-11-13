@@ -11,7 +11,7 @@ namespace ModelerenMenerenAssessment.Model
         public DubbelNaarEenWissel(Richtingen richting) : base(richting) { }
         public Veld VeldVanBoven { get; set; }
         public Veld VeldVanOnder { get; set; }
-        public override Boolean PlaatsKarOpVeld(Kar kar)
+        public override int PlaatsKarOpVeld(Kar kar)
         {
            //Is het veld, afkanelijk van de stand, het vorig veld
             if ((WisselStand == WisselKant.Boven && kar.Veld == VeldVanBoven) || (WisselStand == WisselKant.Onder && kar.Veld == VeldVanOnder))
@@ -19,7 +19,7 @@ namespace ModelerenMenerenAssessment.Model
                 return base.PlaatsKarOpVeld(kar);
             }
 
-            return false;
+            return 1;
         }
     }
 }

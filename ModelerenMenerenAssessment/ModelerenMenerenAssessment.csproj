@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\GameController.cs" />
+    <Compile Include="Model\Baan.cs" />
     <Compile Include="Model\DubbelNaarEenWissel.cs" />
     <Compile Include="Model\EenNaarDubbelWissel.cs" />
     <Compile Include="Model\Eindveld.cs" />

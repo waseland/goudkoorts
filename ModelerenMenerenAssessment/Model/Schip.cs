@@ -8,10 +8,19 @@ namespace ModelerenMenerenAssessment.Model
 {
     public class Schip
     {
-        public int aantalLadingen = 0;
         public const int MAX_AANTAL_LADINGEN = 8;
         private EventService eventService;
+        public int AantalLadingen
+        {
+            get;
+            private set;
+        }
         public virtual Kade Kade
+        {
+            get;
+            set;
+        }
+        public Richtingen Plaatsing
         {
             get;
             set;
@@ -24,9 +33,13 @@ namespace ModelerenMenerenAssessment.Model
 
         internal void LadingErBij()
         {
-            if (++aantalLadingen == MAX_AANTAL_LADINGEN) {
+            //Is het aantal ladingen gelijk aan het maximum???
+            if (++AantalLadingen == MAX_AANTAL_LADINGEN)
+            {
+                //Geef door aan de Luisteraar dat er punten zijn gescoord
                 eventService.publiseer(new PuntenGescoordEvent(10));
-                aantalLadingen = 0;
+                //Reset
+                AantalLadingen = 0;
             }
         }
     }

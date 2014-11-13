@@ -42,26 +42,29 @@ namespace ModelerenMenerenAssessment.Model
             {
                 throw new Exception("Geen volgend veld");
             }
-
-            if (VolgendVeld.PlaatsKarOpVeld(Kar))
+            int resultaat = VolgendVeld.PlaatsKarOpVeld(Kar);
+            if (resultaat >= 0)
             {
-                Kar = null;
+                if (resultaat == 0)
+                {
+                    Kar = null;
+                }
                 return true;
-            }
+            } 
 
             return false;
         }
 
-        public virtual Boolean PlaatsKarOpVeld(Kar kar)
+        public virtual int PlaatsKarOpVeld(Kar kar)
         {
             if (IsBezet())
             {
-                return false;
+                return -1;
             } else {
 
                 Kar = kar;
                 kar.Veld = this;
-                return true;
+                return 0;
             }
         }
     }

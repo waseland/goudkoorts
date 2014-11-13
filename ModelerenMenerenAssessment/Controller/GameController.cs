@@ -34,8 +34,6 @@ namespace ModelerenMenerenAssessment.Controller
         public GameController()
         {
             Spel = new Spel();
-            Spel.Setup();
-
             InputView = new InputView();
             BordView = new BordView();
         }
@@ -43,6 +41,7 @@ namespace ModelerenMenerenAssessment.Controller
         public virtual void Start()
         {
             StartTimer();
+            Spel.StartSpel();
             String input;
             Boolean heeftFoutMelding = false;
             String foutMelding = "";
@@ -62,7 +61,7 @@ namespace ModelerenMenerenAssessment.Controller
                 {
                     try
                     {
-                        Spel.VeranderWisselStand(input);
+                        Spel.Baan.VeranderWisselStand(input);
                     }
                     catch (Exception e) {
                         heeftFoutMelding = true;
@@ -74,7 +73,7 @@ namespace ModelerenMenerenAssessment.Controller
         public void StartTimer()
         {
             TimerCallback tcb = NieuweStap;
-            gameTimer = new Timer(tcb, null, 500, 1000);
+            gameTimer = new Timer(tcb, null, 500, 1500);
         }
 
         public void NieuweStap(Object stateInfo)

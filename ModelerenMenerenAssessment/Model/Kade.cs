@@ -29,15 +29,21 @@ namespace ModelerenMenerenAssessment.Model
             eventService.publiseer(new PuntenGescoordEvent(1));
         }
 
-        public override Boolean PlaatsKarOpVeld(Kar kar)
+        public override int PlaatsKarOpVeld(Kar kar)
         {
-            if (base.PlaatsKarOpVeld(kar))
+            int resultaat = base.PlaatsKarOpVeld(kar);
+            if (resultaat >= 0)
             {
                 LaadKarLadingAf();
-                return true;
+                return resultaat;
             }
 
-            return false;
+            return -1;
+        }
+
+        public Boolean HeeftSchip()
+        {
+            return Schip != null;
         }
     }
 }

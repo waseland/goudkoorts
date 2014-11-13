@@ -2,35 +2,26 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using ModelerenMenerenAssessment.Model.Event;
 
 namespace ModelerenMenerenAssessment.Model
 {
     public class Spel : IEventAbonnee
     {
-        public Wissel[] wissels;
         private int numCalls = 0;
+        private Timer gameTimer;
+        private Random random;
         public int AantalPunten
         {
             get;
             private set;
         }
-        public KarBaan BaanA
+        public Baan Baan
         {
             get;
             private set;
         }
-        public KarBaan BaanB
-        {
-            get;
-            private set;
-        }
-        public KarBaan BaanC
-        {
-            get;
-            private set;
-        }
-
         public Karren Karren
         {
             get;
@@ -40,207 +31,44 @@ namespace ModelerenMenerenAssessment.Model
         public Boolean IsVoorbij
         {
             get;
-            set;
+            private set;
         }
         public Spel()
         {
             Karren      = new Karren();
+            //Initieer de baan en laat deze alle bannen instellen 
+            Baan        = new Baan();
+            Baan.Setup();
+
+            random = new Random();
             IsVoorbij   = false;
-            BaanA       = new KarBaan();
-            BaanB       = new KarBaan();
-            BaanC       = new KarBaan();
             //Abonneer jezelf op de gebeurtenis dat er puntent zijn gescoord
             EventService eventService = EventService.GeefInstantie();
             eventService.abonneer(Events.NIEUWE_PUNTEN, this);
         }
-        public virtual void Setup()
+        public void StartSpel()
         {
-            SetupWissels();
-            Schip[] schepen = SetupSchepen();
-
-            SetupKarBaanA(schepen[0]);
-            SetupKarBaanB();
-            SetupKarBaanC(schepen[1]);
-            
+            TimerCallback tcb = VoegKarToe;
+            gameTimer = new Timer(tcb, null, 500, 8000);
         }
-        protected void SetupWissels()
-        {
-            wissels = new Wissel[5];
-
-            wissels[0] = new DubbelNaarEenWissel(Richtingen.NEUTRAAL) { WisselStand = WisselKant.Boven };
-            wissels[1] = new EenNaarDubbelWissel(Richtingen.OOST) { WisselStand = WisselKant.Boven };
-            wissels[2] = new DubbelNaarEenWissel(Richtingen.NEUTRAAL) { WisselStand = WisselKant.Boven };
-            wissels[3] = new DubbelNaarEenWissel(Richtingen.NEUTRAAL) { WisselStand = WisselKant.Boven };
-            wissels[4] = new EenNaarDubbelWissel(Richtingen.OOST) { WisselStand = WisselKant.Boven };
-        }
-
-        protected Schip[] SetupSchepen()
-        {
-            Schip[] schepen = new Schip[2];
-
-            
-            Schip schipA    = new Schip();
-            Schip schipB    = new Schip();
-
-            schepen[0]      = schipA;
-            schepen[1]      = schipB;
-
-            return schepen;
-        }
-
-        protected void SetupKarBaanA(Schip schip)
-        {
-            BaanA.Insert(new Loods("A", Richtingen.OOST));
-            BaanA.Insert(new Veld(Richtingen.OOST));
-            BaanA.Insert(new Veld(Richtingen.OOST));
-            BaanA.Insert(new Veld(Richtingen.HOEK_OOST_ZUID));
-            //Eerste dubbel wissel - -\__
-            //                     - -/
-            DubbelNaarEenWissel dubbleWissel = (DubbelNaarEenWissel)wissels[0];
-            dubbleWissel.VeldVanBoven = BaanA.Eindveld;
-            BaanA.Insert(dubbleWissel);
-
-            BaanA.Insert(new Veld(Richtingen.OOST));
-            //Eerste dubbel wissel - -\__
-            //                     - -/
-            EenNaarDubbelWissel eenNaarDubbel1 = (EenNaarDubbelWissel)wissels[1];
-            BaanA.Insert(eenNaarDubbel1);
-            BaanA.Insert(new Veld(Richtingen.HOEK_ZUID_OOST));
-            BaanA.Insert(new Veld(Richtingen.OOST));
-            BaanA.Insert(new Veld(Richtingen.OOST));
-            BaanA.Insert(new Veld(Richtingen.OOST));
-            BaanA.Insert(new Veld(Richtingen.HOEK_OOST_ZUID));
-            
-            DubbelNaarEenWissel dubbleWissel2 = (DubbelNaarEenWissel)wissels[2];
-            dubbleWissel2.VeldVanBoven = BaanA.Eindveld;
-            BaanA.Insert(dubbleWissel2);
-
-            BaanA.Insert(new Veld(Richtingen.OOST));
-            //Omhoog
-            BaanA.Insert(new Veld(Richtingen.HOEK_OOST_NOORD));
-            BaanA.Insert(new Veld(Richtingen.NOORD));
-            BaanA.Insert(new Veld(Richtingen.NOORD));
-            BaanA.Insert(new Veld(Richtingen.HOEK_ZUID_WEST));
-
-            //Weer terug naar af
-            BaanA.Insert(new Veld(Richtingen.WEST));
-            BaanA.Insert(new Veld(Richtingen.WEST));
-            //Voeg een kade toe
-            BaanA.Insert(new Kade(schip, Richtingen.WEST));
-
-            for (int i = 0; i < 7; i++ )
-            {
-                BaanA.Insert(new Veld(Richtingen.WEST));
-            }
-            
-            BaanA.Insert(new Eindveld(Richtingen.WEST));
-        }
-
-        protected void SetupKarBaanB()
-        {
-            BaanB.Insert(new Loods("B", Richtingen.OOST));
-            BaanB.Insert(new Veld(Richtingen.OOST));
-            BaanB.Insert(new Veld(Richtingen.OOST));
-            BaanB.Insert(new Veld(Richtingen.HOEK_OOST_NOORD));
-            //Eerste dubbel wissel - -\__
-            //                     - -/
-            DubbelNaarEenWissel dubbleWissel = (DubbelNaarEenWissel)wissels[0];
-            dubbleWissel.VeldVanOnder = BaanB.Eindveld;
-            BaanB.Insert(dubbleWissel);
-            
-            Veld onderVeld = new Veld(Richtingen.HOEK_NOORD_OOST);
-            EenNaarDubbelWissel eenNaarDubbel = (EenNaarDubbelWissel)wissels[1];
-            eenNaarDubbel.OnderVeld = onderVeld;
-            //onderVeld
-            BaanB.Insert(onderVeld);
-            BaanB.Insert(new Veld(Richtingen.HOEK_OOST_ZUID));
-            
-            DubbelNaarEenWissel dubbleWissel3 = (DubbelNaarEenWissel)wissels[3];
-            dubbleWissel3.VeldVanBoven = BaanB.Eindveld;
-            BaanB.Insert(dubbleWissel3);
-            
-            BaanB.Insert(new Veld(Richtingen.OOST));
-            
-            EenNaarDubbelWissel eenNaarDubbel4 = (EenNaarDubbelWissel)wissels[4];
-            BaanB.Insert(eenNaarDubbel4);
-            BaanB.Insert(new Veld(Richtingen.HOEK_ZUID_OOST));
-            BaanB.Insert(new Veld(Richtingen.HOEK_OOST_NOORD));
-            
-            DubbelNaarEenWissel dubbleWissel2 = (DubbelNaarEenWissel)wissels[2];
-            dubbleWissel2.VeldVanOnder = BaanB.Eindveld;
-            BaanB.Eindveld.VolgendVeld = dubbleWissel2;
-            //BaanB.Insert(dubbleWissel3);
-        }
-
-        protected void SetupKarBaanC(Schip schip)
-        {
-            BaanC.Insert(new Loods("C", Richtingen.OOST));
-            for (int i = 0; i < 5; i++)
-            {
-                BaanC.Insert(new Veld(Richtingen.OOST));
-            }
-
-            BaanC.Insert(new Veld(Richtingen.HOEK_OOST_NOORD));
-
-            DubbelNaarEenWissel dubbleWissel3 = (DubbelNaarEenWissel)wissels[3];
-            dubbleWissel3.VeldVanOnder = BaanC.Eindveld;
-            BaanC.Insert(dubbleWissel3);
-            
-
-            Veld onderVeld = new Veld(Richtingen.HOEK_NOORD_OOST);
-            EenNaarDubbelWissel eenNaarDubbel4 = (EenNaarDubbelWissel)wissels[4];
-            eenNaarDubbel4.OnderVeld = onderVeld;
-
-            BaanC.Insert(onderVeld);
-            BaanC.Insert(new Veld(Richtingen.OOST));
-            BaanC.Insert(new Veld(Richtingen.OOST));
-            BaanC.Insert(new Veld(Richtingen.HOEK_OOST_ZUID));
-            BaanC.Insert(new Veld(Richtingen.ZUID));
-            BaanC.Insert(new Veld(Richtingen.HOEK_NOORD_WEST));
-            
-            //Weer terug naar af
-            BaanC.Insert(new Veld(Richtingen.WEST));
-            BaanC.Insert(new Veld(Richtingen.WEST));
-            //Voeg een kade toe
-            BaanC.Insert(new Kade(schip, Richtingen.WEST));
-
-            for (int i = 0; i < 7; i++ )
-            {
-                BaanC.Insert(new Veld(Richtingen.WEST));
-            }
-            
-            BaanC.Insert(new Eindveld(Richtingen.WEST));
-            
-        }
-
+     
         public void StopSpel()
         {
+            gameTimer.Dispose();
             IsVoorbij = true;
         }
-        public void VeranderWisselStand(String wissel)
+
+        public void VoegKarToe(Object stateInfo)
         {
-            int wisselID;
-            bool isGetal = int.TryParse(wissel, out wisselID);
-            if (isGetal) {
-                if (wisselID > 0 && wisselID <= 5)
-                {
-                    wissels[wisselID - 1].WijzigWisselStand();
-                }
-            }
-            else
-            {
-                throw new Exception("Geen goeie input");
-            }
+            //Elke vier aanroepen, oftewel elke vier seconden komt er een kar bij 
+            Kar kar = new Kar(Baan.GeefWillekurigeBaan());
+            Karren.voegToe(kar);
+
+            gameTimer.Change(random.Next(2000, 10000), 0);
         }
+
         public void DoeNieuweStap()
         {
-
-            //Elke vier aanroepen, oftewel elke vier seconden komt er een kar bij 
-            if (numCalls % 4 == 0)
-            {
-                Kar kar = new Kar(BaanA.Startveld);
-                Karren.voegToe(kar);
-            }
             //Als er karren in het spel zitten, vraag deze dan een stap te nemen
             if (Karren.Lengte > 0)
             {
