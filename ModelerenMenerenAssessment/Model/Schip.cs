@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ModelerenMenerenAssessment.Model.Event;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,27 +10,17 @@ namespace ModelerenMenerenAssessment.Model
     {
         public int aantalLadingen = 0;
         public const int MAX_AANTAL_LADINGEN = 8;
+        private EventService eventService;
         public virtual Kade Kade
         {
             get;
             set;
         }
 
-        public virtual Depot Depot
-        {
-            get;
-            private set;
-        }
-
-        public Schip(Depot depot)
-        {
-            Depot = depot;
-        }
-
         internal void LadingErBij()
         {
             if (++aantalLadingen == MAX_AANTAL_LADINGEN) {
-                Depot.NieweLading();
+                eventService.publiseer(new PuntenGescoordEvent(1));
                 aantalLadingen = 0;
             }
         }

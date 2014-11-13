@@ -2,13 +2,19 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using ModelerenMenerenAssessment.Model.Event;
 
 namespace ModelerenMenerenAssessment.Model
 {
-    public class Spel
+    public class Spel : IEventAbonnee
     {
         public Wissel[] wissels;
         private int numCalls = 0;
+        public int AantalPunten
+        {
+            get;
+            private set;
+        }
         public KarBaan BaanA
         {
             get;
@@ -31,11 +37,6 @@ namespace ModelerenMenerenAssessment.Model
             private set;
         }
 
-        public virtual Depot Depot
-        {
-            get;
-            set;
-        }
         public Boolean IsVoorbij
         {
             get;
@@ -48,6 +49,9 @@ namespace ModelerenMenerenAssessment.Model
             BaanA       = new KarBaan();
             BaanB       = new KarBaan();
             BaanC       = new KarBaan();
+            //Abonneer jezelf op de gebeurtenis dat er puntent zijn gescoord
+            EventService eventService = EventService.GeefInstantie();
+            eventService.abonneer(Events.NIEUWE_PUNTEN, this);
         }
         public virtual void Setup()
         {
@@ -285,6 +289,14 @@ namespace ModelerenMenerenAssessment.Model
             }
 
             numCalls++;
+        }
+
+        public void informeer(Event.Event gebeurtenis)
+        {
+            if (gebeurtenis.Type == Events.NIEUWE_PUNTEN) {
+                PuntenGescoordEvent puntentGescoord = (PuntenGescoordEvent)gebeurtenis;
+                AantalPunten += puntentGescoord.AantalPunten;
+            }
         }
     }
 }

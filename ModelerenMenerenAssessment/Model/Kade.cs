@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ModelerenMenerenAssessment.Model.Event;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,6 +8,7 @@ namespace ModelerenMenerenAssessment.Model
 {
     public class Kade : Veld
     {
+        private EventService eventService;
         public virtual Schip Schip
         {
             get;
@@ -17,7 +19,8 @@ namespace ModelerenMenerenAssessment.Model
         public Kade(Schip schip, Richtingen richting)
             : base(richting)
         {
-            Schip = schip;   
+            Schip = schip;
+            eventService = EventService.GeefInstantie();
         }
 
         protected void LaadKarLadingAf () {
@@ -30,6 +33,8 @@ namespace ModelerenMenerenAssessment.Model
             if (base.PlaatsKarOpVeld(kar))
             {
                 LaadKarLadingAf();
+                eventService.publiseer( new PuntenGescoordEvent(1) );
+
                 return true;
             }
 
